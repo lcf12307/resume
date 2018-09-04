@@ -20,12 +20,14 @@ class Job51 extends CFormModel
     const statusUrl = "https://i.51job.com/resume/ajax/resume_complete.php?userid=379795114&isenglish=c&action=get";    //获取邮件状态
     function upload(){
 
-        $result = $this->login();
-//        $result = $this->uploadBasic($result['cookie']);
-        $result = $this->getVerifyCode($result['cookie']);
+        $cookie = 'protected/data/cookies/51job';
+//        $result = $this->login();
+//        $result = $this->uploadBasic($cookie);
+        $result = $this->getVerifyCode($cookie);
+        $result = $this->uploadEmail($cookie);
+        var_dump($result);exit;
         //添加header 输出png
-        @ header("Content-Type:image/png");
-        echo $result['data'];exit;
+
 
     }
 
@@ -101,7 +103,7 @@ class Job51 extends CFormModel
             'action_type' => 'save',
             'action' => 'user_email',
             'newemail' => 'lcf12307@qq.com',    //新邮箱
-            'vldcode' => 'y3jq',    //验证码
+            'vldcode' => '37h1',    //验证码
             'isenglish' => 'c'
         );
         return $util->post(self::emailUrl, $post_data, $cookie);
@@ -109,6 +111,9 @@ class Job51 extends CFormModel
 
     function getVerifyCode($cookie){
         $util = new Util();
-        return $util->get(self::emailCodeUrl, array(), $cookie);
+        $result = $util->get(self::emailCodeUrl, array(), $cookie);
+        echo urlencode($result);exit;
+        @ header("Content-Type:image/png");
+        echo $result;exit;
     }
 }

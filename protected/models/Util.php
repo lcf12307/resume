@@ -16,7 +16,9 @@ class Util extends CFormModel
         }
 
         $post_data = $this->handleData($post_data);
-        $cookie_jar = tempnam('.', 'cookie');
+        $file = explode('.', $url);
+        $file = $file[1];
+        $cookie_jar = 'protected/data/cookies/'. $file ;//tempnam('.', 'cookie');
         $postUrl = $url;
         $curlPost = $post_data;
         $ch = curl_init();//初始化curl
@@ -31,10 +33,7 @@ class Util extends CFormModel
         $data = curl_exec($ch);//运行curl
         curl_close($ch);
 
-        return array(
-            'data' => $data,
-            'cookie' => $cookie_jar
-        );
+        return $data;
     }
 
     function post($url = '', $post_data = array(), $cookie){
@@ -58,10 +57,7 @@ class Util extends CFormModel
         $data = curl_exec($ch);//运行curl
         curl_close($ch);
 
-        return array(
-            'data' => $data,
-            'cookie' => $cookie_jar
-        );
+        return $data;
     }
     function get($url = '', $post_data = array(), $cookie){
 
@@ -80,10 +76,7 @@ class Util extends CFormModel
         $data = curl_exec($ch);//运行curl
         curl_close($ch);
 
-        return array(
-            'data' => $data,
-            'cookie' => $cookie_jar
-        );
+        return $data;
     }
     function handleData($post_data = array()){
         $o = "";
