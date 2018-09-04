@@ -322,3 +322,19 @@ REQUEST_URI=/index.php?r=resume/test
 in /home/work/data/www/resume/protected/models/Util.php (82)
 in /home/work/data/www/resume/protected/models/Job51.php (17)
 in /home/work/data/www/resume/protected/controllers/ResumeController.php (44)
+2018/09/04 20:45:56 [error] [php] imagecreatefrompng(‰PNG
+
+) [<a href='function.imagecreatefrompng'>function.imagecreatefrompng</a>]: failed to open stream: No such file or directory (/home/work/data/www/resume/protected/models/Job51.php:26)
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): ResumeController->actionTest()
+#1 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams()
+#2 /home/work/data/www/resume/framework/web/CController.php(286): ResumeController->runAction()
+#3 /home/work/data/www/resume/framework/web/CController.php(265): ResumeController->runActionWithFilters()
+#4 /home/work/data/www/resume/framework/web/CWebApplication.php(282): ResumeController->run()
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#6 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#7 /home/work/data/www/resume/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php?r=resume/test
+in /home/work/data/www/resume/protected/models/Job51.php (26)
+in /home/work/data/www/resume/protected/controllers/ResumeController.php (44)
+in /home/work/data/www/resume/index.php (13)

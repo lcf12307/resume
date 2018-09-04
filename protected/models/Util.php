@@ -64,9 +64,6 @@ class Util extends CFormModel
         );
     }
     function get($url = '', $post_data = array(), $cookie){
-        if (empty($url) || empty($post_data)) {
-            return false;
-        }
 
         $post_data = $this->handleData($post_data);
         $cookie_jar = $cookie;

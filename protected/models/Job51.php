@@ -22,8 +22,10 @@ class Job51 extends CFormModel
 
         $result = $this->login();
 //        $result = $this->uploadBasic($result['cookie']);
-        $result = $this->uploadEmail($result['cookie']);
-        var_dump($result);exit;
+        $result = $this->getVerifyCode($result['cookie']);
+        //添加header 输出png
+        @ header("Content-Type:image/png");
+        echo $result['data'];exit;
 
     }
 
@@ -103,5 +105,10 @@ class Job51 extends CFormModel
             'isenglish' => 'c'
         );
         return $util->post(self::emailUrl, $post_data, $cookie);
+    }
+
+    function getVerifyCode($cookie){
+        $util = new Util();
+        return $util->get(self::emailCodeUrl, array(), $cookie);
     }
 }
