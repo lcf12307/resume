@@ -17,8 +17,8 @@ class Job51 extends CFormModel
     const checkUrl = "https://login.51job.com/ajax/checkinfo.php?jsoncallback=jQuery183012269767961235134_1536055739504&value=lcf12307%40sina.com&type=useremail";  //检查格式 暂时没有用到
     const emailUrl = "https://i.51job.com/resume/ajax/userinfo_edit.php?0.1903854190464287";    //发送验证邮件
     const emailCodeUrl = "https://login.51job.com/ajax/verifycode.php?type=2&from_domain=i.51job.com&t=1536056288";     //获取验证邮件参数url
+    const statusUrl = "https://i.51job.com/resume/ajax/resume_complete.php?userid=379795114&isenglish=c&action=get";    //获取邮件状态
     function upload(){
-        $util = new Util();
 
         $result = $this->login();
         $result = $this->uploadBasic($result['cookie']);
@@ -57,23 +57,23 @@ class Job51 extends CFormModel
             'isenglish' => 'c',     //默认为c
             'userid' => '',
             'cname' => '超凡',    //名字
-            'efirstname' => 'liu',
-            "ename" => "chavey",
+            'efirstname' => '',
+            "ename" => "",
             "sex" => "0",
             "workyear" => "2013",
-            "mobilephone" => "17888823912",
+            "mobilephone" => "13121152878",
             "email" => "lcf12307@sina.com",
             "current_situation" => "1",
             "area" => "010500",
             "idtype" => "0",
-            "idcard" => "110",
+            "idcard" => "",
             "hukou" => "",
-            "marriage" => "0",
+            "marriage" => "",
             "politics_status" => "",
             "contacttype" => "00",
             "othercontacts" => "",
-            "stature" => "",
-            "address" => "五彩成",
+            "stature" => "",        //身高
+            "address" => "",
             "zipcode" => "",
             "homepage" => "",
             "birthday" => "1996/11/01"
