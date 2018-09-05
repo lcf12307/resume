@@ -9,8 +9,8 @@
 
 class Util extends CFormModel
 {
-    private $user = 'a6456833';
-    private $pass = 'a123456';
+    private $user = 'lcf12307';
+    private $pass = 'bnm,.123';
     private $sid = '1897465132';
     const VERIFY_URL =  'http://api2.sz789.net:88/RecvByte.ashx';
     const PHONE_LOGIN_URL =  'http://api.ndd001.com/do.php';

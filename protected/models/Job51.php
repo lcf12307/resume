@@ -14,7 +14,7 @@ class Job51 extends CFormModel
     const baseUrl = "https://i.51job.com/resume/ajax/base_detail.php?action=save";       //修改基础信息
     const resumeUrl = "https://i.51job.com/resume/ajax/resume_complete.php?userid=379795114&rsmname=resume&isenglish=c&action=save"; //修改简历名字
     const phoneCodeUrl = "https://login.51job.com/ajax/sendphonecode.php?mobile=17338128781&nation=CN&isEnglish=c&type=10";  //发送手机验证码
-    const checkUrl = "https://login.51job.com/ajax/checkinfo.php?jsoncallback=jQuery183012269767961235134_1536055739504&value=lcf12307%40sina.com&type=useremail";  //检查格式 暂时没有用到
+    const checkUrl = "https://i.51job.com/userset/my_51job.php?lang=c";  //检查登录
     const emailUrl = "https://i.51job.com/resume/ajax/userinfo_edit.php";    //修改用户信息
     const emailCodeUrl = "https://login.51job.com/ajax/verifycode.php?type=2&from_domain=i.51job.com";     //获取验证邮件参数url
     const statusUrl = "https://i.51job.com/resume/ajax/resume_complete.php?userid=379795114&isenglish=c&action=get";    //获取邮件状态
@@ -27,8 +27,9 @@ class Job51 extends CFormModel
 
         $cookie = 'protected/data/cookies/51job';
         $result = $this->login();
-        $resume_id = $this->getResumes($cookie, $data = array());
-        $result = $this->uploadBasic($cookie, $resume_id);
+        $result = $this->check($cookie);
+//        $resume_id = $this->getResumes($cookie);
+//        $result = $this->uploadBasic($cookie);
 //        $result = $this->getVerifyCode($cookie);
 //        $result = $this->uploadEmail($cookie);
 //        $result = $this->uploadPhone($cookie);
@@ -56,6 +57,17 @@ class Job51 extends CFormModel
 
     }
 
+    /**
+     * 检查登录状态
+     * @param $cookie
+     */
+    function check($cookie){
+        $util = new Util();
+        $result = $util->get(self::checkUrl, array(), $cookie);
+        $result = mb_convert_encoding($result, 'utf-8', 'gbk');
+        $status = (strstr($result, 'uname e_icon at') != false)? true : false;
+        var_dump($status);exit;
+    }
     /**
      * 修改基础信息
      * @param $cookie
@@ -148,30 +160,35 @@ class Job51 extends CFormModel
     function uploadEmail($cookie){
         $util = new Util();
         $result = $this->getVerifyCode($cookie);
-	if($result['info'] != 1){
-		return array(
-			'code' => -1,
-			'info' => ' email verify fail!'
-		);
-	}
-	$post_data = array(
-            'action_type' => 'save',
-            'action' => 'user_email',
-            'newemail' => 'lcf12307@qq.com',    //新邮箱
-            'vldcode' => $result['result'],    //验证码
-            'isenglish' => 'c'
-        );
-        return $util->post(self::emailUrl, $post_data, $cookie);
+	    if($result['info'] != 1){
+            echo $result;exit;
+	    }
+        $post_data = array(
+                'action_type' => 'save',
+                'action' => 'user_email',
+                'newemail' => 'lcf12307@163.com',    //新邮箱
+                'vldcode' => $result['result'],    //验证码
+                'isenglish' => 'c'
+            );
+	    return $util->post(self::emailUrl, $post_data, $cookie);
     }
 
-    function getVerifyCode($cookie){
+    /**
+     * @param $cookie
+     * @param $type    获取验证码的方式  0是登录时获取，1是邮箱验证的时候获取
+     * @return mixed|string
+     */
+    function getVerifyCode($cookie, $type = 1){
+        switch ($type){
+            case 0: $url = self::loginCodeUrl;break;
+            case 1: $url = self::emailCodeUrl;break;
+            default: $url = self::emailCodeUrl;
+        }
         $util = new Util();
-        $result = $util->get(self::emailCodeUrl, array(), $cookie);
-	$result = bin2hex($result);
-	$result = $util->recv_byte($result);
-	return $result;
-        @ header("Content-Type:image/png");
-        echo $result;exit;
+        $result = $util->get($url, array(), $cookie);
+        $result = bin2hex($result);
+        $result = $util->recv_byte($result);
+        return json_decode($result, true);
     }
 
     function getResumes($cookie){
