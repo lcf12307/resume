@@ -10,6 +10,8 @@ class Job51 extends CFormModel
 {
     private $username;
     private $password;
+    private $cookie;//todo cookie
+    private $params = array();
     const loginUrl = "https://login.51job.com/login.php?lang=c";        //登录url
     const baseUrl = "https://i.51job.com/resume/ajax/base_detail.php?action=save";       //修改基础信息
     const resumeUrl = "https://i.51job.com/resume/ajax/resume_complete.php?userid=379795114&rsmname=resume&isenglish=c&action=save"; //修改简历名字
@@ -25,59 +27,15 @@ class Job51 extends CFormModel
     const newResumeUrl = 'https://i.51job.com/resume/standard_resume.php?lang=c';       //新建简历
     function upload(){
 
-        $cookie = 'protected/data/cookies/51job';
-        $result = $this->login();
-        $result = $this->check($cookie);
-//        $resume_id = $this->getResumes($cookie);
-//        $result = $this->uploadBasic($cookie);
-//        $result = $this->getVerifyCode($cookie);
-//        $result = $this->uploadEmail($cookie);
-//        $result = $this->uploadPhone($cookie);
-//        $result = $this->uploadSalary($cookie, $resume_id);
-        echo mb_convert_encoding($result, 'utf-8', 'gbk');exit;
-
-    }
-
-    /**
-     * 登录
-     * @return array|bool
-     */
-    function login(){
-        $util = new Util();
-        $post_data = array(
-            'lang' => 'c',
-            'action' => 'save',
-            'from_domain' => 'i',
+        $this->params = array(
+            //登录信息
             'loginname' => '13121152878',
             'password' => 'bnm,.123',
             'verifycode' => '',
-            'isread' => 'on'
-        );
-        return $util->login(self::loginUrl, $post_data);
-
-    }
-
-    /**
-     * 检查登录状态
-     * @param $cookie
-     */
-    function check($cookie){
-        $util = new Util();
-        $result = $util->get(self::checkUrl, array(), $cookie);
-        $result = mb_convert_encoding($result, 'utf-8', 'gbk');
-        $status = (strstr($result, 'uname e_icon at') != false)? true : false;
-        var_dump($status);exit;
-    }
-    /**
-     * 修改基础信息
-     * @param $cookie
-     * @return array
-     */
-    function uploadBasic($cookie){
-        $util = new Util();
-        $post_data = array(
+            //简历id
+            'resume_id' => '',
+            //基础信息
             'isenglish' => 'c',     //默认为c
-            'userid' => '379834384',
             'cname' => '超1凡',    //名字
             'efirstname' => '',
             "ename" => "",
@@ -85,7 +43,7 @@ class Job51 extends CFormModel
             "workyear" => "2013",
             "mobilephone" => "13121152878",
             "email" => "lcf12307@sina.com",
-            "current_situation" => "1",
+            "current_situation" => "0",     //当前工作状态， 0是正在找，3是观望中，4是不想找
             "area" => "010500",
             "idtype" => "0",
             "idcard" => "",
@@ -98,24 +56,135 @@ class Job51 extends CFormModel
             "address" => "",
             "zipcode" => "",
             "homepage" => "",
-            "birthday" => "1996/11/01"
+            "birthday" => "1996/11/01",
+            //薪酬信息
+            'salary' => 100,
+            'basesalary' => 12, //基本工资
+            'bonus' => 32,  //补贴
+            'allowance' => 32, //奖金佣金
+            'stock' => 24,  //股权收益
+        );
+        $result = $this->login();
+        $cookie = $result['cookie'];
+        $status = $this->check($cookie);
+        if (!$status){
+            $this->params['verifycode'] = $this->getVerifyCode($cookie, 0);
+            $result = $this->login();
+            $cookie = $result['cookie'];
+            $status = $this->check($cookie);
+            if (!$status){
+                echo json_encode(array(
+                    'code' => -2,
+                    'msg' => 'job51 login error'
+                ));exit;
+            }
+        }
+        $this->params['resume_id'] = $this->getResumes($cookie);
+        $this->uploadBasic($cookie);
+        $this->uploadEmail($cookie);
+        //暂时不开发上传手机的功能
+//        $result = $this->uploadPhone($cookie);
+        $this->uploadSalary($cookie);
+
+    }
+
+    /**
+     * 登录
+     * @param array
+     * @return array|bool
+     */
+    function login(){
+        $util = new Util();
+        $post_data = array(
+            'lang' => 'c',
+            'action' => 'save',
+            'from_domain' => 'i',
+            'loginname' => $this->params['loginname'],
+            'password' => $this->params['password'],
+            'verifycode' => $this->params['verifycode'],
+            'isread' => 'on'
+        );
+        return $util->login(self::loginUrl, $post_data);
+
+    }
+
+    /**
+     * 检查登录状态
+     * @param $cookie
+     * @return boolean
+     */
+    function check($cookie){
+        $util = new Util();
+        $result = $util->get(self::checkUrl, array(), $cookie);
+        $result = mb_convert_encoding($result, 'utf-8', 'gbk');
+        $result = strstr($result, 'uname e_icon at') ;
+        return ($result != false)? $result : false;
+
+    }
+    /**
+     * 修改基础信息
+     * @param $cookie
+     * @return array
+     */
+    function uploadBasic($cookie){
+        $util = new Util();
+        $post_data = array(
+            'isenglish' => $this->params['isenglish'],     //默认为c
+            'userid' => $this->params['resume_id'],
+            'cname' => $this->params['cname'],    //名字
+            'efirstname' => $this->params['efirstname'],
+            "ename" => $this->params['ename'],
+            "sex" => $this->params['sex'],
+            "workyear" => $this->params['workyear'],
+            "mobilephone" => $this->params['mobilephone'],
+            "email" => $this->params['email'],
+            "current_situation" => $this->params['current_situation'],
+            "area" => $this->params['area'],
+            "idtype" => $this->params['idtype'],
+            "idcard" => $this->params['idcard'],
+            "hukou" => $this->params['hukou'],
+            "marriage" => $this->params['marriage'],
+            "politics_status" => $this->params['politics_status'],
+            "contacttype" => $this->params['contacttype'],
+            "othercontacts" => $this->params['othercontacts'],
+            "stature" => $this->params['stature'],        //身高
+            "address" => $this->params['address'],
+            "zipcode" => $this->params['zipcode'],
+            "homepage" => $this->params['homepage'],
+            "birthday" => $this->params['birthday']
         );
         return $util->post(self::baseUrl, $post_data, $cookie);
     }
 
-
+    /**
+     * 上传薪酬相关
+     * @param $cookie
+     * @return mixed
+     */
     function uploadSalary($cookie){
         $util = new Util();
         $post_data = array(
-            'isenglish' => 'c',
-            'userid' => '',
-            'salary' => 120,
-            'basesalary' => 10, //基本工资
-            'bonus' => 30,  //补贴
-            'allowance' => 30, //奖金佣金
-            'stock' => 30,  //股权收益
+            'isenglish' => $this->params['isenglish'],
+            'userid' => $this->params['resume_id'],
+            'salary' => $this->params['salary'],
+            'basesalary' => $this->params['basesalary'], //基本工资
+            'bonus' => $this->params['bonus'],  //补贴
+            'allowance' => $this->params['allowance'], //奖金佣金
+            'stock' => $this->params['stock'],  //股权收益
         );
         return $util->post(self::salaryUrl, $post_data, $cookie);
+    }
+
+    //上传工作经历
+    function uploadWork(){
+
+    }
+    //todo
+    /**
+     * 上传头像
+     */
+    function uploadAvatar(){
+
     }
     /**
      * 上传手机
@@ -166,7 +235,7 @@ class Job51 extends CFormModel
         $post_data = array(
                 'action_type' => 'save',
                 'action' => 'user_email',
-                'newemail' => 'lcf12307@163.com',    //新邮箱
+                'newemail' => $this->params['email'],    //新邮箱
                 'vldcode' => $result['result'],    //验证码
                 'isenglish' => 'c'
             );
@@ -195,17 +264,17 @@ class Job51 extends CFormModel
         $util = new Util();
         //新建一个简历，并且保存
         $util->get(self::newResumeUrl, array(), $cookie);
-        $this->uploadBasic($cookie, array());
+        $this->uploadBasic($cookie);
         $result = $util->get(self::uidUrl, array(), $cookie);
         $result = mb_convert_encoding($result, 'utf-8', 'gbk');
-        preg_match_all('/resumeid=(.*?)>/', $result, $resumes);
+        preg_match_all('/resumeid=(.*?)">/', $result, $resumes);
         $result = array();
         foreach ($resumes[1] as $key => $value){
             if ($key%2 == 1){
                 $result[] = $value;
             }
         }
-        return $result;
+        return empty($result)?'':$result[count($result)-1];
 
     }
 }
