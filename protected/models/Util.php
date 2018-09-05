@@ -113,5 +113,17 @@ class Util extends CFormModel
         preg_match_all($pattern,$string,$result);
         return $result;
     }
-
+    function recv_byte($imgdata)
+    {
+	$user = 'a6456833';
+	$pass = 'a123456';
+	$http = curl_init();
+	curl_setopt($http,CURLOPT_URL,'http://api2.sz789.net:88/RecvByte.ashx');
+	curl_setopt($http,CURLOPT_RETURNTRANSFER,1); 
+	$postData = 'username='.$user.'&password='.$pass .'&imgdata='.$imgdata;
+	curl_setopt($http,CURLOPT_POSTFIELDS,$postData);
+	$data = curl_exec($http);
+	curl_close($http);
+	return $data;
+    }
 }
