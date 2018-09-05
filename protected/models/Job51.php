@@ -18,14 +18,21 @@ class Job51 extends CFormModel
     const emailUrl = "https://i.51job.com/resume/ajax/userinfo_edit.php";    //修改用户信息
     const emailCodeUrl = "https://login.51job.com/ajax/verifycode.php?type=2&from_domain=i.51job.com";     //获取验证邮件参数url
     const statusUrl = "https://i.51job.com/resume/ajax/resume_complete.php?userid=379795114&isenglish=c&action=get";    //获取邮件状态
+    const salaryUrl = 'https://i.51job.com/resume/ajax/salary.php?action=save';
+    const loginCodeUrl = 'https://login.51job.com/ajax/verifycode.php?type=33&from_domain=i';   //登录获取验证码
+    const educationUrl = 'https://i.51job.com/resume/ajax/education.php?action=save';   //修改教育经历
+    const uidUrl = 'https://i.51job.com/resume/resume_center.php?lang=c'; //
     function upload(){
 
         $cookie = 'protected/data/cookies/51job';
-//        $result = $this->login();
+        $result = $this->login();
+        $result = $this->getResumes($cookie);
 //        $result = $this->uploadBasic($cookie);
-        $result = $this->getVerifyCode($cookie);
-        $result = $this->uploadEmail($cookie);
-        var_dump($result);exit;
+//        $result = $this->getVerifyCode($cookie);
+//        $result = $this->uploadEmail($cookie);
+//        $result = $this->uploadPhone($cookie);
+//        $result = $this->uploadSalary($cookie);
+        echo mb_convert_encoding($result, 'utf-8', 'gbk');exit;
         //添加header 输出png
 
 
@@ -59,8 +66,8 @@ class Job51 extends CFormModel
         $util = new Util();
         $post_data = array(
             'isenglish' => 'c',     //默认为c
-            'userid' => '',
-            'cname' => '超凡',    //名字
+            'userid' => '379834384',
+            'cname' => '超1凡',    //名字
             'efirstname' => '',
             "ename" => "",
             "sex" => "0",
@@ -85,11 +92,53 @@ class Job51 extends CFormModel
         return $util->post(self::baseUrl, $post_data, $cookie);
     }
 
-    /**上传手机
+
+    function uploadSalary($cookie){
+        $util = new Util();
+        $post_data = array(
+            'isenglish' => 'c',
+            'userid' => '',
+            'salary' => 120,
+            'basesalary' => 10, //基本工资
+            'bonus' => 30,  //补贴
+            'allowance' => 30, //奖金佣金
+            'stock' => 30,  //股权收益
+        );
+        return $util->post(self::salaryUrl, $post_data, $cookie);
+    }
+    /**
+     * 上传手机
+     * 如果本身有注册手机号则不需要
      * @param $cookie
      */
     function uploadPhone($cookie){
+        $util = new Util();
+        $result = $util->getToken();
+        $token = explode('|', $result);
+        $token = $token[0];
 
+
+        //获取手机号
+        $data = array(
+            'action' => 'getPhone',
+            'token' => $token
+        );
+        $result = $util->getPhone($data);
+        //获取信息
+        $data = array(
+            'action' => 'getMessage',
+            'token' => $token,
+            'phone' => $result,
+        );
+        $result = $util->getPhone($data);
+        //释放手机
+        $data = array(
+            'action' => 'cancelRecv',
+            'token' => $token,
+            'phone' => $result,
+        );
+        $result = $util->getPhone($data);
+        var_dump($result);exit;
     }
 
     /**
@@ -124,5 +173,20 @@ class Job51 extends CFormModel
 	return $result;
         @ header("Content-Type:image/png");
         echo $result;exit;
+    }
+
+    function getResumes($cookie){
+        $util = new Util();
+        $result = $util->get(self::uidUrl, array(), $cookie);
+        $result = mb_convert_encoding($result, 'utf-8', 'gbk');
+        preg_match_all('/resumeid=(.*?)>/', $result, $resumes);
+        $result = array();
+        foreach ($resumes[1] as $key => $value){
+            if ($key%2 == 1){
+                $result[] = $value;
+            }
+        }
+        return $result;
+
     }
 }

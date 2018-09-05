@@ -9,7 +9,11 @@
 
 class Util extends CFormModel
 {
-
+    private $user = 'a6456833';
+    private $pass = 'a123456';
+    private $sid = '1897465132';
+    const VERIFY_URL =  'http://api2.sz789.net:88/RecvByte.ashx';
+    const PHONE_LOGIN_URL =  'http://api.ndd001.com/do.php';
     function login($url = '', $post_data = array()) {
         if (empty($url) || empty($post_data)) {
             return false;
@@ -25,8 +29,6 @@ class Util extends CFormModel
         curl_setopt($ch, CURLOPT_URL,$postUrl);//抓取指定网页
         curl_setopt($ch, CURLOPT_HEADER, 0);//设置header
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);//要求结果为字符串且输出到屏幕上
-//        curl_setopt($ch, CURLOPT_COOKIEJAR,$cookie_jar);
-//        curl_setopt($ch, CURLOPT_COOKIEFILE, $cookie_jar);
         curl_setopt($ch, CURLOPT_COOKIEJAR,$cookie_jar);
         curl_setopt($ch, CURLOPT_POST, 1);//post提交方式
         curl_setopt($ch, CURLOPT_POSTFIELDS, $curlPost);
@@ -113,17 +115,53 @@ class Util extends CFormModel
         preg_match_all($pattern,$string,$result);
         return $result;
     }
+
+    /**
+     * 识别图形验证码
+     * @param $imgdata
+     * @return mixed
+     */
     function recv_byte($imgdata)
     {
-	$user = 'a6456833';
-	$pass = 'a123456';
-	$http = curl_init();
-	curl_setopt($http,CURLOPT_URL,'http://api2.sz789.net:88/RecvByte.ashx');
-	curl_setopt($http,CURLOPT_RETURNTRANSFER,1); 
-	$postData = 'username='.$user.'&password='.$pass .'&imgdata='.$imgdata;
-	curl_setopt($http,CURLOPT_POSTFIELDS,$postData);
-	$data = curl_exec($http);
-	curl_close($http);
-	return $data;
+        $http = curl_init();
+        curl_setopt($http,CURLOPT_URL,self::VERIFY_URL);
+        curl_setopt($http,CURLOPT_RETURNTRANSFER,1);
+        $postData = 'username='.$this->user.'&password='.$this->pass .'&imgdata='.$imgdata;
+        curl_setopt($http,CURLOPT_POSTFIELDS,$postData);
+        $data = curl_exec($http);
+        curl_close($http);
+        return $data;
     }
+
+    /**
+     * 获取手机token
+     * @return array|mixed
+     */
+    function getToken(){
+        $http = curl_init();
+        curl_setopt($http,CURLOPT_URL,self::PHONE_LOGIN_URL);
+        curl_setopt($http,CURLOPT_RETURNTRANSFER,1);
+        $data = array(
+            'action' => 'loginIn',
+            'name' => $this->user,
+            'password' => $this->pass
+        );
+        $postData = $this->handleData($data);
+        curl_setopt($http,CURLOPT_POSTFIELDS,$postData);
+        $data = curl_exec($http);
+        curl_close($http);
+        return $data;
+    }
+    function getPhone($data = array()){
+        $http = curl_init();
+        curl_setopt($http,CURLOPT_URL,self::PHONE_LOGIN_URL);
+        curl_setopt($http,CURLOPT_RETURNTRANSFER,1);
+        $data['sid'] = $this->sid;
+        $postData = $this->handleData($data);
+        curl_setopt($http,CURLOPT_POSTFIELDS,$postData);
+        $data = curl_exec($http);
+        curl_close($http);
+        return $data;
+    }
+
 }
