@@ -113,6 +113,7 @@ class Job51 extends CFormModel
         $util = new Util();
         $result = $util->get(self::emailCodeUrl, array(), $cookie);
         echo urlencode($result);exit;
+        //控制输出方式
         @ header("Content-Type:image/png");
         echo $result;exit;
     }
