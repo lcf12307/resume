@@ -35,7 +35,10 @@ class Util extends CFormModel
         $data = curl_exec($ch);//运行curl
         curl_close($ch);
 
-        return $data;
+        return array(
+            'data' => $data,
+            'cookie' => $cookie_jar
+        );
     }
 
     function post($url = '', $post_data = array(), $cookie){

@@ -21,20 +21,19 @@ class Job51 extends CFormModel
     const salaryUrl = 'https://i.51job.com/resume/ajax/salary.php?action=save';
     const loginCodeUrl = 'https://login.51job.com/ajax/verifycode.php?type=33&from_domain=i';   //登录获取验证码
     const educationUrl = 'https://i.51job.com/resume/ajax/education.php?action=save';   //修改教育经历
-    const uidUrl = 'https://i.51job.com/resume/resume_center.php?lang=c'; //
+    const uidUrl = 'https://i.51job.com/resume/resume_center.php?lang=c';               //获取简历id
+    const newResumeUrl = 'https://i.51job.com/resume/standard_resume.php?lang=c';       //新建简历
     function upload(){
 
         $cookie = 'protected/data/cookies/51job';
         $result = $this->login();
-        $result = $this->getResumes($cookie);
-//        $result = $this->uploadBasic($cookie);
+        $resume_id = $this->getResumes($cookie, $data = array());
+        $result = $this->uploadBasic($cookie, $resume_id);
 //        $result = $this->getVerifyCode($cookie);
 //        $result = $this->uploadEmail($cookie);
 //        $result = $this->uploadPhone($cookie);
-//        $result = $this->uploadSalary($cookie);
+//        $result = $this->uploadSalary($cookie, $resume_id);
         echo mb_convert_encoding($result, 'utf-8', 'gbk');exit;
-        //添加header 输出png
-
 
     }
 
@@ -177,6 +176,9 @@ class Job51 extends CFormModel
 
     function getResumes($cookie){
         $util = new Util();
+        //新建一个简历，并且保存
+        $util->get(self::newResumeUrl, array(), $cookie);
+        $this->uploadBasic($cookie, array());
         $result = $util->get(self::uidUrl, array(), $cookie);
         $result = mb_convert_encoding($result, 'utf-8', 'gbk');
         preg_match_all('/resumeid=(.*?)>/', $result, $resumes);
