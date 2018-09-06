@@ -39,7 +39,7 @@ class Job51 extends CFormModel
 
     //todo 删除多余信息， 上传头像，上传更多信息的功能，信息存到数据库里
     function upload(){
-var_dump(111);exit;
+
         $this->params = array(
             //登录信息
             'loginname' => '13121152878',
