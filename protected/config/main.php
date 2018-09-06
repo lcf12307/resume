@@ -7,7 +7,7 @@
 // CWebApplication properties can be configured here.
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'My Web Application',
+	'name'=>'简历分发系统',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -73,6 +73,15 @@ return array(
 				*/
 			),
 		),
+//        'urlManager' => array(
+//
+//            'enablePrettyUrl' => true,//开启URL美化
+//            'showScriptName' => false,//禁用index.php文件
+//            'rules' => array(
+//                'test/<id:\d+>.html' => 'test/articlelist',//设置自己的路由规则，这里我设置了一个控制器里面的一个方法的规则,只要满足了这个规则就会跳转到相应的方法去处理
+//            )
+//        ),
+
 
 	),
 
