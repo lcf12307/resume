@@ -14,15 +14,15 @@ class Util extends CFormModel
     private $sid = '1897465132';
     const VERIFY_URL =  'http://api2.sz789.net:88/RecvByte.ashx';
     const PHONE_LOGIN_URL =  'http://api.ndd001.com/do.php';
+
+
     function login($url = '', $post_data = array()) {
         if (empty($url) || empty($post_data)) {
             return false;
         }
 
         $post_data = $this->handleData($post_data);
-        $file = explode('.', $url);
-        $file = $file[1];
-        $cookie_jar = 'protected/data/cookies/'. $file ;//tempnam('.', 'cookie');
+        $cookie_jar = tempnam('protected/data/cookies/', 'cookie');
         $postUrl = $url;
         $curlPost = $post_data;
         $ch = curl_init();//初始化curl
@@ -167,4 +167,13 @@ class Util extends CFormModel
         return $data;
     }
 
+    function getSites(){
+        return array(
+            1 => '51job',
+//            2 => '上海',
+//            3 => '天津',
+//            4 => '武汉'
+        );
+
+    }
 }

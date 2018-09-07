@@ -73,6 +73,27 @@ return array(
 				*/
 			),
 		),
+        //文件上传
+        'file'=>array(
+            'class' => 'application.components.File',
+            'key' => 'file',
+            'name'=>uniqid(),
+        ),
+    //        'assetManager' => array(
+    //            'bundles' => array(
+    //                'all' => array(
+    //                    'class' => 'yii\web\AssetBundle',
+    //                    'basePath' => '@webroot/assets',
+    //                    'baseUrl' => '@web/assets',
+    //                    'css' => array('all-xyz.css'),
+    //                    'js' => array('all-xyz.js'),
+    //                ),
+    //                'A' => array('css' => array(), 'js' => array(), 'depends' => array('all')),
+    //                'B' => array('css' => array(), 'js' => array(), 'depends' => array('all')),
+    //                'C' => array('css' => array(), 'js' => array(), 'depends' => array('all')),
+    //                'D' => array('css' => array(), 'js' => array(), 'depends' => array('all')),
+    //            ),
+    //        ),
     ),
 
 	// application-level parameters that can be accessed
@@ -80,5 +101,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'lcf12307@qq.com',
+        'uploadPath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'../../upload/',
 	),
 );

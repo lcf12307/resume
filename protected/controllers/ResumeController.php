@@ -28,7 +28,6 @@ class ResumeController extends Controller
         if(isset($_POST['ResumeForm']))
         {
             $model->attributes=$_POST['ResumeForm'];
-            var_dump($_POST);exit;
             if($model->validate())
             {
                 $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
@@ -45,6 +44,37 @@ class ResumeController extends Controller
         }
         $this->render('index',array('model'=>$model));
     }
+
+    public function actionUpload(){
+
+        $util = new Util();
+        if (!empty($_POST)){
+            try{
+                //上传成功
+                Yii::app()->file->upload();
+                $filename =  Yii::app()->file->getNameWithExtension();
+                Acount::uploadAccount($filename);
+                $result = array(
+                    'code' => 0,
+                    'msg' => '上传成功'
+                );
+            }catch (CException $e){
+                $result = Yii::app()->file->getError();
+                $msg = $result[0];
+                $result = array(
+                    'code' => -10001,
+                    'msg' => $msg
+                );
+                //errors错误信息数组
+            }
+            Yii::app()->user->setflash('result', $result);
+            $this->refresh();
+        }
+        $this->render('upload', array('sites' => $util->getSites(), 'selected' => 1));
+    }
+
+
+
 
     public function actionTest()
     {

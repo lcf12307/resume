@@ -30,6 +30,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			'items'=>array(
 				array('label'=>'Resume', 'url'=>array('/resume/index')),
+                array('label'=>'Upload', 'url'=>array('/resume/upload'))
 			),
 		)); ?>
 	</div><!-- mainmenu -->
