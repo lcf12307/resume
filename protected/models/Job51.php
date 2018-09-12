@@ -49,14 +49,14 @@ class Job51 extends CFormModel
             'resume_id' => '',
             //基础信息
             'isenglish' => 'c',     //默认为c
-            'cname' => '超1凡',    //名字
+            'cname' => 'ouyangjiang',    //名字
             'efirstname' => '',
             "ename" => "",
-            "sex" => "0",
+            "sex" => "1",
             "workyear" => "2013",
             "mobilephone" => "13121152878",
-            "email" => "lcf12307@sina.com",
-            "current_situation" => "0",     //当前工作状态， 0是正在找，3是观望中，4是不想找
+            "email" => "lcf12307@qq.com",
+            "current_situation" => "3",     //当前工作状态， 0是正在找，3是观望中，4是不想找
             "area" => "010500",
             "idtype" => "0",
             "idcard" => "",
