@@ -62,7 +62,6 @@ class ResumeController extends Controller
 
 
 
-
     public function actionTest()
     {
         $test = new Job51();
