@@ -25,35 +25,22 @@ class ResumeController extends Controller
     public function actionIndex()
     {
         $model=new ResumeForm();
-        if(isset($_POST['ResumeForm']))
-        {
-            $model->attributes=$_POST['ResumeForm'];
-            if($model->validate())
-            {
-                $name='=?UTF-8?B?'.base64_encode($model->name).'?=';
-                $subject='=?UTF-8?B?'.base64_encode($model->subject).'?=';
-                $headers="From: $name <{$model->email}>\r\n".
-                    "Reply-To: {$model->email}\r\n".
-                    "MIME-Version: 1.0\r\n".
-                    "Content-Type: text/plain; charset=UTF-8";
-
-                mail(Yii::app()->params['adminEmail'],$subject,$model->body,$headers);
-                Yii::app()->user->setFlash('contact','Thank you for contacting us. We will respond to you as soon as possible.');
-                $this->refresh();
-            }
+        $form = new CForm('application.views.site.resumeForm', $model);
+        if($form->submitted('login') && $form->validate())
+            $this->redirect(array('resume/index'));
+        else{
+            $this->render('login', array('form'=>$form));
         }
-        $this->render('index',array('model'=>$model));
     }
 
     public function actionUpload(){
-
         $util = new Util();
         if (!empty($_POST)){
             try{
                 //上传成功
                 Yii::app()->file->upload();
                 $filename =  Yii::app()->file->getNameWithExtension();
-                Acount::uploadAccount($filename);
+                Acount::uploadAccount($filename, $_POST['sites']);
                 $result = array(
                     'code' => 0,
                     'msg' => '上传成功'

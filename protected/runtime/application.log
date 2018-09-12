@@ -1296,3 +1296,11 @@ Stack trace:
 REQUEST_URI=/index.php/resume/upload
 HTTP_REFERER=http://resume.myglife.cn/index.php/resume/upload
 ---
+2018/09/12 09:34:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.Acount' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Acount`.
+in /home/work/data/www/resume/protected/models/Acount.php (29)
+in /home/work/data/www/resume/protected/controllers/ResumeController.php (56)
+in /home/work/data/www/resume/index.php (13)
+2018/09/12 09:34:35 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.Acount' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `Acount`.
+in /home/work/data/www/resume/protected/models/Acount.php (29)
+in /home/work/data/www/resume/protected/controllers/ResumeController.php (56)
+in /home/work/data/www/resume/index.php (13)
