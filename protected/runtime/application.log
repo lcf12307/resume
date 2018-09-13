@@ -1433,3 +1433,435 @@ Stack trace:
 REQUEST_URI=/favicon.ico
 HTTP_REFERER=http://resume.myglife.cn/resume/index
 ---
+2018/09/13 21:04:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:04:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:05:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:06:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:06:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:07:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected../assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected../assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected../assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected../assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:07:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/protected../assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/protected../assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:09:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:09:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:09:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:10:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:10:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:10:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:11:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:11:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:11:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:11:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:12:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:12:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---
+2018/09/13 21:17:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "home/work/data/www/resume/assets/area/js/jquery.cxselect.js".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('home/work/data/...')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/home/work/data/www/resume/assets/area/js/jquery.cxselect.js
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---

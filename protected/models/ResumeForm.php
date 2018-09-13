@@ -63,7 +63,13 @@ class ResumeForm extends CFormModel
             'cname'=>'姓名',
             'workyear' => '开始工作年份',
             'mobilephone' => '手机号',
-            'email' => '电子邮箱'
+            'email' => '电子邮箱',
+
+            'salary' => '年收入',
+            'basesalary' => '基本工资',
+            'bonus' => '补贴',
+            'allowance' => '奖金佣金',
+            'stock' => '股权收益',
         );
     }
 }
