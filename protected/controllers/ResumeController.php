@@ -24,13 +24,14 @@ class ResumeController extends Controller
 
     public function actionIndex()
     {
-        $model=new ResumeForm();
-        $form = new CForm('application.views.site.resumeForm', $model);
-        if($form->submitted('login') && $form->validate())
-            $this->redirect(array('resume/index'));
-        else{
-            $this->render('login', array('form'=>$form));
+        $util = new Util();
+        $model = new ResumeForm();
+        if (!empty($_POST)){
+           var_dump($_POST);exit;
+            Yii::app()->user->setflash('result', $result);
+            $this->refresh();
         }
+        $this->render('index', array('sites' => $util->getSites(), 'selected' => 1, 'model' => $model));
     }
 
     public function actionUpload(){

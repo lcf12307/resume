@@ -1404,3 +1404,32 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/resume/tet
 ---
+2018/09/13 10:36:13 [error] [php] Invalid argument supplied for foreach() (/home/work/data/www/resume/framework/web/helpers/CHtml.php:2556)
+Stack trace:
+#0 /home/work/data/www/resume/protected/views/resume/index.php(33): CActiveForm->dropDownList()
+#1 /home/work/data/www/resume/framework/web/CBaseController.php(126): require()
+#2 /home/work/data/www/resume/framework/web/CBaseController.php(95): ResumeController->renderInternal()
+#3 /home/work/data/www/resume/framework/web/CController.php(872): ResumeController->renderFile()
+#4 /home/work/data/www/resume/framework/web/CController.php(785): ResumeController->renderPartial()
+#5 /home/work/data/www/resume/protected/controllers/ResumeController.php(34): ResumeController->render()
+#6 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): ResumeController->actionIndex()
+#7 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams()
+#8 /home/work/data/www/resume/framework/web/CController.php(286): ResumeController->runAction()
+#9 /home/work/data/www/resume/framework/web/CController.php(265): ResumeController->runActionWithFilters()
+#10 /home/work/data/www/resume/framework/web/CWebApplication.php(282): ResumeController->run()
+#11 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#12 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/work/data/www/resume/index.php(13): CWebApplication->run()
+REQUEST_URI=/resume/index
+in /home/work/data/www/resume/protected/views/resume/index.php (33)
+in /home/work/data/www/resume/protected/controllers/ResumeController.php (34)
+in /home/work/data/www/resume/index.php (13)
+2018/09/13 12:18:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://resume.myglife.cn/resume/index
+---

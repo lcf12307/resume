@@ -60,7 +60,10 @@ class ResumeForm extends CFormModel
     public function attributeLabels()
     {
         return array(
-            'verifyCode'=>'Verification Code',
+            'cname'=>'姓名',
+            'workyear' => '开始工作年份',
+            'mobilephone' => '手机号',
+            'email' => '电子邮箱'
         );
     }
 }
