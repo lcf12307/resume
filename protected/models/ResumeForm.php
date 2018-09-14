@@ -70,6 +70,9 @@ class ResumeForm extends CFormModel
             'bonus' => '补贴',
             'allowance' => '奖金佣金',
             'stock' => '股权收益',
+            'resumekey' => '个人标签（空格分开）',
+            'expectposition' => '期望职位',
+            'selfintro' => '自我评价'
         );
     }
 }

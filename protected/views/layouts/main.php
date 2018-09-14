@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
 	<meta name="language" content="en">
 
 	<!-- blueprint CSS framework -->
