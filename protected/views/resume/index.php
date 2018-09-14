@@ -17,10 +17,22 @@ $this->pageTitle=Yii::app()->name;
     <script src="https://js.51jobcdn.com/in/js/2016/layer/layer_main_map.js?20180815" type="text/javascript" charset="gb2312"></script>
     <script>
         $(document).ready(function(){
-            $('#area').bind('input propertychange', function() {
-
-                $('#area').val(area['010000']);
+            var area_select;
+            for (area_select in oAreaM ) {
+                $('#province').append('<option value="'+area_select+'">'+area[area_select]+'</option>');
+            }
+            $('#province').change(function () {
+                var city_string = oAreaM[$('#province').val()];
+                var citys = city_string.split(',');
+                $('#city').empty();
+                for (var i=0;i<citys.length;i++){
+                    $('#city').append('<option value="'+ citys[i] +'">'+area[citys[i]]+'</option>')
+                }
+                $('#ResumeForm_area').val(citys[0]);
             });
+            $('#city').change(function () {
+                $('#ResumeForm_area').val($('#city').val());
+            })
         });
 
     </script>
@@ -110,10 +122,10 @@ $this->pageTitle=Yii::app()->name;
 
 
         <div class="row">
-            <?php echo $form->labelEx($model,'area'); ?>
-            <?php echo $form->textField($model,'area', array('id' => 'area')); ?>
-            <?php echo $form->error($model,'area'); ?>
-            <div id="areas"></div>
+            <div><?php echo CHtml::label('请选择工作城市：', true);?></div>
+            <div ><?php echo CHtml::dropDownList( 'province', 0 , array());?></div>
+            <div ><?php echo CHtml::dropDownList( 'city', 0 , array());?></div>
+            <div ><?php echo CHtml::hiddenField('ResumeForm[area]')?></div>
         </div>
 
         <div class="row">
