@@ -217,7 +217,7 @@ $this->pageTitle=Yii::app()->name;
                     'bonusname': $('#award_name').val(),
                     'bonusclass': $('#award_class').val()
                 };
-                var append='<div><label class="btn-info award" >'+JSON.stringify(award)+'</label>';
+                var append='<div><label class="btn-info delete" >'+JSON.stringify(award)+'</label>';
                 award['bonusid'] = '';
 
                 award = award['bonustime']+'_'+ award['bonusname']+'_'+ award['bonusclass'];
@@ -229,7 +229,7 @@ $this->pageTitle=Yii::app()->name;
             })
         });
 
-        $(document).on('click', "[class ='btn-info award']", function () {
+        $(document).on('click', "[class ='btn-info delete']", function () {
             $(this).parent().remove();
         });
         $(document).on('click', "[class ='btn-info area']", function () {

@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f755d23-f1a9-447f-ba48-a7b1482d5de2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change beforePath="$PROJECT_DIR$/protected/views/resume/index.php" afterPath="$PROJECT_DIR$/protected/views/resume/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,13 +47,13 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/resume/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="488" column="77" lean-forward="false" selection-start-line="488" selection-start-column="77" selection-end-line="488" selection-end-column="77" />
+            <state relative-caret-position="202">
+              <caret line="232" column="38" lean-forward="true" selection-start-line="232" selection-start-column="38" selection-end-line="232" selection-end-column="38" />
               <folding>
-                <element signature="e#12368#12632#0#HTML" expanded="false" />
-                <element signature="e#12707#12968#0#HTML" expanded="false" />
-                <element signature="e#13042#13307#0#HTML" expanded="false" />
-                <element signature="e#13465#13651#0#PHP" expanded="false" />
+                <element signature="e#12370#12634#0#HTML" expanded="false" />
+                <element signature="e#12709#12970#0#HTML" expanded="false" />
+                <element signature="e#13044#13309#0#HTML" expanded="false" />
+                <element signature="e#13467#13653#0#PHP" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -86,6 +85,7 @@
       <find>companysize</find>
       <find>cposition</find>
       <find>ccompname</find>
+      <find>btn-info award</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -215,7 +215,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536339931972</updated>
       <workItem from="1536339936408" duration="4317000" />
-      <workItem from="1536943430912" duration="37400000" />
+      <workItem from="1536943430912" duration="37525000" />
     </task>
     <task id="LOCAL-00001" summary="js">
       <created>1537110263712</created>
@@ -224,11 +224,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537110263712</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="下一步，写工作经历和项目经历添加按钮的js和按label&#10;删除">
+      <created>1537113786094</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1537113786094</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41717000" />
+    <option name="totallyTimeSpent" value="41842000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -262,7 +269,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="js" />
-    <option name="LAST_COMMIT_MESSAGE" value="js" />
+    <MESSAGE value="下一步，写工作经历和项目经历添加按钮的js和按label&#10;删除" />
+    <option name="LAST_COMMIT_MESSAGE" value="下一步，写工作经历和项目经历添加按钮的js和按label&#10;删除" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -412,13 +420,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/resume/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="488" column="77" lean-forward="false" selection-start-line="488" selection-start-column="77" selection-end-line="488" selection-end-column="77" />
+        <state relative-caret-position="202">
+          <caret line="232" column="38" lean-forward="true" selection-start-line="232" selection-start-column="38" selection-end-line="232" selection-end-column="38" />
           <folding>
-            <element signature="e#12368#12632#0#HTML" expanded="false" />
-            <element signature="e#12707#12968#0#HTML" expanded="false" />
-            <element signature="e#13042#13307#0#HTML" expanded="false" />
-            <element signature="e#13465#13651#0#PHP" expanded="false" />
+            <element signature="e#12370#12634#0#HTML" expanded="false" />
+            <element signature="e#12709#12970#0#HTML" expanded="false" />
+            <element signature="e#13044#13309#0#HTML" expanded="false" />
+            <element signature="e#13467#13653#0#PHP" expanded="false" />
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
