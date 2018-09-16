@@ -2193,3 +2193,2129 @@ Stack trace:
 REQUEST_URI=/assets/area/js/jquery.cxselect.js'
 HTTP_REFERER=http://resume.myglife.cn/resume/index
 ---
+2018/09/15 00:41:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php?r=site/loin
+---
+2018/09/15 00:41:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 18:44:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "js".' in G:\resume\framework\web\CController.php:486
+Stack trace:
+#0 G:\resume\framework\web\CController.php(270): CController->missingAction('js')
+#1 G:\resume\framework\web\CWebApplication.php(282): CController->run('js')
+#2 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('resume/js/index...')
+#3 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 G:\resume\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/resume/js/index.js
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 18:44:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 18:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 18:50:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 18:51:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:00:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:04:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:17:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:20:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:21:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:22:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:22:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:53:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:53:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:55:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 19:56:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:00:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:02:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:02:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:03:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:03:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:07:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:07:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:10:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:11:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:25:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:28:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:30:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:31:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:32:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:38:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:40:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:43:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:43:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:46:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:46:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:48:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:49:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:51:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:51:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 20:54:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:01:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:07:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:16:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:21:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:25:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:26:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:26:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:28:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:29:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:31:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:33:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:35:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:37:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:37:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:37:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:38:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:38:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:38:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:45:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:45:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:45:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:47:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:48:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:48:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:52:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:56:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 21:57:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:25:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:27:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:28:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:28:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:29:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:29:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:32:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:32:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:33:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:33:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:33:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:34:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:34:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:34:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:35:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:36:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:38:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:39:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:39:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:40:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:40:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:40:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:41:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:42:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:42:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:44:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:45:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:45:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:46:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:47:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:47:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:48:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:48:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:49:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:51:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:52:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:52:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:53:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:53:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:53:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:54:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:54:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 22:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:02:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:03:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:05:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:05:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:06:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:07:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:07:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:08:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:10:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:11:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:12:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:13:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:17:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:18:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:32:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:34:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:35:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:37:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:40:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:40:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:55:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:57:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:57:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/15 23:59:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:00:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:04:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:05:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:23:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:24:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:25:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:29:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:29:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:31:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:36:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:37:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:38:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:38:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:38:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:48:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:48:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:49:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:49:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:50:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 00:52:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:01:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:02:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:03:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:04:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:05:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:06:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:07:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:08:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:09:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:09:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 01:09:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 10:55:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 10:55:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 10:55:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 10:56:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 10:59:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 11:00:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 11:00:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 11:07:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 11:08:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 11:10:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 11:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 11:10:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:22:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:22:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:23:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:23:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:23:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:24:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:26:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:26:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:32:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:32:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:33:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:35:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:36:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:41:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:41:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:44:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:44:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:45:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:49:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:53:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:53:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:53:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:57:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:57:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:58:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 16:58:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 17:01:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 17:04:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 17:04:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 17:08:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 17:23:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---

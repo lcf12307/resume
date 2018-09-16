@@ -27,7 +27,7 @@ class ResumeController extends Controller
         $util = new Util();
         $model = new ResumeForm();
         if (!empty($_POST)){
-           var_dump($_POST);exit;
+           echo json_encode($_POST);exit;
             Yii::app()->user->setflash('result', $result);
             $this->refresh();
         }

@@ -86,7 +86,7 @@ class Job51 extends CFormModel
             "resumekey" => "1 2",           //个人标签
             "salarytype" => "4",            //薪资类型 1是月薪，4是年薪，3日薪,2时薪
             "expectposition" => "1",        //期望职位
-            "inputsalary" => "01",          //收入钱数
+            "inputsalary" => "01",          //收入钱数 自定义是8-10格式
             //工作经历
             'work' => array(
                 array(
