@@ -4319,3 +4319,89 @@ Stack trace:
 REQUEST_URI=/favicon.ico
 HTTP_REFERER=http://localhost/index.php/resume/index
 ---
+2018/09/16 23:10:24 [error] [exception.CException] exception 'CException' with message 'Property "ResumeForm.cworkdescribe" is not defined.' in G:\resume\framework\base\CComponent.php:130
+Stack trace:
+#0 G:\resume\framework\web\helpers\CHtml.php(2760): CComponent->__get('cworkdescribe')
+#1 G:\resume\framework\web\helpers\CHtml.php(1840): CHtml::resolveValue(Object(ResumeForm), 'cworkdescribe')
+#2 G:\resume\framework\web\widgets\CActiveForm.php(853): CHtml::activeTextArea(Object(ResumeForm), 'cworkdescribe', Array)
+#3 G:\resume\protected\views\resume\index.php(458): CActiveForm->textArea(Object(ResumeForm), 'cworkdescribe', Array)
+#4 G:\resume\framework\web\CBaseController.php(126): require('G:\\resume\\prote...')
+#5 G:\resume\framework\web\CBaseController.php(95): CBaseController->renderInternal('G:\\resume\\prote...', Array, true)
+#6 G:\resume\framework\web\CController.php(872): CBaseController->renderFile('G:\\resume\\prote...', Array, true)
+#7 G:\resume\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#8 G:\resume\protected\controllers\ResumeController.php(34): CController->render('index', Array)
+#9 G:\resume\framework\web\actions\CInlineAction.php(49): ResumeController->actionIndex()
+#10 G:\resume\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 G:\resume\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 G:\resume\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 G:\resume\framework\web\CWebApplication.php(282): CController->run('index')
+#14 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('resume/index')
+#15 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 G:\resume\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/index.php/resume/index
+HTTP_REFERER=http://localhost/index.php?r=site/loin
+---
+2018/09/16 23:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 23:11:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 23:26:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 23:27:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 23:29:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/16 23:31:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---
+2018/09/17 00:01:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/resume/index
+---

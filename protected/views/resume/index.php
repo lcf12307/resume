@@ -39,6 +39,9 @@ $this->pageTitle=Yii::app()->name;
             for (var i=0;i<d_jobstatus.length;i++){
                 $('#ResumeForm_current_situation').append('<option value="' + d_jobstatus[i]['k']+ '">'+d_jobstatus[i]['v']+'</option>');
             }
+            for (var i=0;i<d_companysize.length;i++){
+                $('#companysize').append('<option value="' + d_companysize[i]['k']+ '">'+d_companysize[i]['v']+'</option>');
+            }
             for (var i=0;i<d_workyear.length;i++){
                 $('#ResumeForm_workyear').append('<option value="' + d_workyear[i]['k']+ '">'+d_workyear[i]['v']+'</option>');
             }
@@ -57,29 +60,39 @@ $this->pageTitle=Yii::app()->name;
             for (var i=0;i<d_yearsal.length;i++) {
                 $('#ResumeForm_inputsalary').append('<option value="' + d_yearsal[i]['k'] + '">' + d_yearsal[i]['v'] + '</option>');
             }
+            for (var i=0;i<d_cotype.length;i++) {
+                $('#companytype').append('<option value="' + d_cotype[i]['k'] + '">' + d_cotype[i]['v'] + '</option>');
+            }
 
             var func_select;
             for (func_select in oFTM ) {
                 $('#expect_func1').append('<option value="'+func_select+'">'+ft[func_select]+'</option>');
+                $('#workfunc1').append('<option value="'+func_select+'">'+ft[func_select]+'</option>');
             }
 
             var func_string = oFTM[$('#expect_func1').val()];
             var funcs = func_string.split(',');
             $('#expect_func2').empty();
+            $('#workfunc2').empty();
             for (var i=0;i<funcs.length;i++){
                 $('#expect_func2').append('<option value="'+ funcs[i] +'">'+ft[funcs[i]]+'</option>');
+                $('#workfunc2').append('<option value="'+func_select+'">'+ft[func_select]+'</option>');
             }
 
             for (var i=0;i<aITN.length;i++){
                 $('#expect_industry1').append('<option value="'+i+'">'+aITN[i]['c']+'</option>');
+                $('#workindustry1').append('<option value="'+i+'">'+aITN[i]['c']+'</option>');
             }
 
 
             var ind_string = aITN[$('#expect_industry1').val()];
             var inds = ind_string['category'];
             $('#expect_industry2').empty();
+            $('#workindustry2').empty();
+
             for (var i=0;i<inds.length;i++){
                 $('#expect_industry2').append('<option value="'+ inds[i] +'">'+it[inds[i]]+'</option>');
+                $('#workindustry2').append('<option value="'+ inds[i] +'">'+it[inds[i]]+'</option>');
             }
 
             $('#ResumeForm_salarytype').change(function () {
@@ -119,12 +132,27 @@ $this->pageTitle=Yii::app()->name;
                 }
             });
             $('#expect_industry1').change(function () {
-
                 var ind_string = aITN[$('#expect_industry1').val()];
                 var inds = ind_string['category'];
                 $('#expect_industry2').empty();
                 for (var i=0;i<inds.length;i++){
                     $('#expect_industry2').append('<option value="'+ inds[i] +'">'+it[inds[i]]+'</option>');
+                }
+            });
+            $('#workfunc1').change(function () {
+                var funcs_string = oFTM[$('#workfunc1').val()];
+                var funcs = funcs_string.split(',');
+                $('#workfunc2').empty();
+                for (var i=0;i<funcs.length;i++){
+                    $('#workfunc2').append('<option value="'+ funcs[i] +'">'+ft[funcs[i]]+'</option>')
+                }
+            });
+            $('#workindustry1').change(function () {
+                var ind_string = aITN[$('#workindustry1').val()];
+                var inds = ind_string['category'];
+                $('#workindustry2').empty();
+                for (var i=0;i<inds.length;i++){
+                    $('#workindustry2').append('<option value="'+ inds[i] +'">'+it[inds[i]]+'</option>');
                 }
             });
             $('#expect_province').change(function () {
@@ -407,44 +435,79 @@ $this->pageTitle=Yii::app()->name;
                         <span class="input-group-addon">职能</span>
                         <div ><?php echo CHtml::dropDownList( 'workfunc1', 0 , array(), array('class' =>'form-control'));?></div>
                         <div ><?php echo CHtml::dropDownList( 'workfunc2', 0 , array(), array('class' =>'form-control'));?></div>
-                        <div ><?php echo CHtml::hiddenField('ResumeForm[workfunc]', '' )?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">行业</span>
                         <div ><?php echo CHtml::dropDownList( 'workindustry1', 0 , array(), array('class' =>'form-control'));?></div>
                         <div ><?php echo CHtml::dropDownList( 'workindustry2', 0 , array(), array('class' =>'form-control'));?></div>
-                        <div ><?php echo CHtml::hiddenField('ResumeForm[workindustry]', '' )?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">职位</span>
-                        <div><?php echo CHtml::textField( 'workindustry', '', array('class' =>'form-control'));?></div>
+                        <div><?php echo CHtml::textField( 'cposition', '', array('class' =>'form-control'));?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">公司规模</span>
-                        <div ><?php echo CHtml::dropDownList( 'ResumeForm[companysize]', 0 , array(), array('class' =>'form-control'));?></div>
+                        <div ><?php echo CHtml::dropDownList( 'companysize', 0 , array(), array('class' =>'form-control'));?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">部门</span>
-                        <div ><?php echo CHtml::dropDownList( 'ResumeForm[cdepartment]', 0 , array(), array('class' =>'form-control'));?></div>
+                        <div ><?php echo CHtml::textArea( 'cdepartment', '' , array('class' =>'form-control'));?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">公司性质</span>
-                        <div ><?php echo CHtml::dropDownList( 'ResumeForm[companytype]', 0 , array(), array('class' =>'form-control'));?></div>
+                        <div ><?php echo CHtml::dropDownList( 'companytype', 0 , array(), array('class' =>'form-control'));?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">工作描述</span>
-                        <div><?php echo $form->textArea($model,'cworkdescribe', array('class' =>'form-control')); ?></div>
+                        <div><?php echo CHtml::textArea('cworkdescribe','', array('class' =>'form-control')); ?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">工作类型</span>
-                        <div ><?php echo CHtml::dropDownList( 'ResumeForm[worktype]', 0 , array(), array('class' =>'form-control'));?></div>
-                    </div>worktype
+                        <div ><?php echo CHtml::dropDownList( 'worktype', 0 , array(0=>'全职', 1=>'兼职'), array('class' =>'form-control'));?></div>
+                    </div>
                 </div>
             </div>
+        </div>
         <div class="row">
             <div class="panel panel-primary">
                 <div class="panel-heading">
-                    <h3 class="panel-title">校内冗余
+                    <h3 class="panel-title">项目经历
+                        <span class="btn-success" id="project_add">添加</span></h3>
+                </div>
+                <div class="panel-body">
+                    <div id="award_inserted"></div>
+                    <div  class="input-group">
+                        <span class="input-group-addon">开始时间</span>
+                        <div><?php echo CHtml::dateField( 'starttime', '', array('class' =>'form-control'));?></div>
+                    </div>
+                    <div  class="input-group">
+                        <span class="input-group-addon">结束时间</span>
+                        <div><?php echo CHtml::dateField( 'endtime', '', array('class' =>'form-control'));?></div>
+                    </div>
+                    <div  class="input-group">
+                        <span class="input-group-addon">所属公司</span>
+                        <div><?php echo CHtml::textField( 'ccompname_project', '', array('class' =>'form-control'));?></div>
+                    </div>
+                    <div  class="input-group">
+                        <span class="input-group-addon">项目</span>
+                        <div><?php echo CHtml::textField( 'cprojectname', '', array('class' =>'form-control'));?></div>
+                    </div>
+
+                    <div  class="input-group">
+                        <span class="input-group-addon">项目描述</span>
+                        <div ><?php echo CHtml::textArea( 'cdescribe', '' , array('class' =>'form-control'));?></div>
+                    </div>
+                    <div  class="input-group">
+                        <span class="input-group-addon">责任描述</span>
+                        <div ><?php echo CHtml::textArea( 'cfunction', '' , array('class' =>'form-control'));?></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">校内荣誉
                         <span class="btn-success" id="award_add">添加</span></h3>
                 </div>
                 <div class="panel-body">

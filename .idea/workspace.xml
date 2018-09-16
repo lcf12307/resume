@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2f755d23-f1a9-447f-ba48-a7b1482d5de2" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/protected/views/resume/js/index.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/ResumeController.php" afterPath="$PROJECT_DIR$/protected/controllers/ResumeController.php" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Job51.php" afterPath="$PROJECT_DIR$/protected/models/Job51.php" />
-      <change beforePath="$PROJECT_DIR$/protected/models/ResumeForm.php" afterPath="$PROJECT_DIR$/protected/models/ResumeForm.php" />
       <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change beforePath="$PROJECT_DIR$/protected/views/resume/index.php" afterPath="$PROJECT_DIR$/protected/views/resume/index.php" />
     </list>
@@ -44,8 +38,8 @@
       <file leaf-file-name="Job51.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/Job51.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="29" />
+            <state relative-caret-position="278">
+              <caret line="102" column="34" lean-forward="false" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -54,13 +48,13 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/resume/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
-              <caret line="427" column="143" lean-forward="true" selection-start-line="427" selection-start-column="143" selection-end-line="427" selection-end-column="143" />
+            <state relative-caret-position="240">
+              <caret line="488" column="77" lean-forward="false" selection-start-line="488" selection-start-column="77" selection-end-line="488" selection-end-column="77" />
               <folding>
-                <element signature="e#10710#10974#0#HTML" expanded="false" />
-                <element signature="e#11049#11310#0#HTML" expanded="false" />
-                <element signature="e#11384#11649#0#HTML" expanded="false" />
-                <element signature="e#11807#11993#0#PHP" expanded="false" />
+                <element signature="e#12368#12632#0#HTML" expanded="false" />
+                <element signature="e#12707#12968#0#HTML" expanded="false" />
+                <element signature="e#13042#13307#0#HTML" expanded="false" />
+                <element signature="e#13465#13651#0#PHP" expanded="false" />
                 <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
               </folding>
             </state>
@@ -82,6 +76,16 @@
       <find>span</find>
       <find>of</find>
       <find>area</find>
+      <find>work</find>
+      <find>workfunc</find>
+      <find>workindustry</find>
+      <find>cworkdescribe</find>
+      <find>worktype</find>
+      <find>companytype</find>
+      <find>cdepartment</find>
+      <find>companysize</find>
+      <find>cposition</find>
+      <find>ccompname</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -211,12 +215,20 @@
       <option name="presentableId" value="Default" />
       <updated>1536339931972</updated>
       <workItem from="1536339936408" duration="4317000" />
-      <workItem from="1536943430912" duration="34200000" />
+      <workItem from="1536943430912" duration="37400000" />
     </task>
+    <task id="LOCAL-00001" summary="js">
+      <created>1537110263712</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1537110263712</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38517000" />
+    <option name="totallyTimeSpent" value="41717000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -247,6 +259,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="js" />
+    <option name="LAST_COMMIT_MESSAGE" value="js" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -388,21 +404,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Job51.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="29" />
+        <state relative-caret-position="278">
+          <caret line="102" column="34" lean-forward="false" selection-start-line="102" selection-start-column="21" selection-end-line="102" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/views/resume/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="427" column="143" lean-forward="true" selection-start-line="427" selection-start-column="143" selection-end-line="427" selection-end-column="143" />
+        <state relative-caret-position="240">
+          <caret line="488" column="77" lean-forward="false" selection-start-line="488" selection-start-column="77" selection-end-line="488" selection-end-column="77" />
           <folding>
-            <element signature="e#10710#10974#0#HTML" expanded="false" />
-            <element signature="e#11049#11310#0#HTML" expanded="false" />
-            <element signature="e#11384#11649#0#HTML" expanded="false" />
-            <element signature="e#11807#11993#0#PHP" expanded="false" />
+            <element signature="e#12368#12632#0#HTML" expanded="false" />
+            <element signature="e#12707#12968#0#HTML" expanded="false" />
+            <element signature="e#13042#13307#0#HTML" expanded="false" />
+            <element signature="e#13465#13651#0#PHP" expanded="false" />
             <element signature="n#div#1;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
