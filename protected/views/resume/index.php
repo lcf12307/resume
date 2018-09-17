@@ -490,7 +490,7 @@ $this->pageTitle=Yii::app()->name;
 
                     <div  class="input-group">
                         <span class="input-group-addon">性别</span>
-                        <div ><?php echo CHtml::dropDownList( 'ResumeForm[sites]', 0 , array( 0 => '男', 1 => '女') , array('class' =>'form-control'));?></div>
+                        <div ><?php echo CHtml::dropDownList( 'ResumeForm[sex]', 0 , array( 0 => '男', 1 => '女') , array('class' =>'form-control'));?></div>
                     </div>
 
                     <div  class="input-group">
@@ -509,10 +509,7 @@ $this->pageTitle=Yii::app()->name;
                         <?php echo $form->emailField($model,'email', array('class' =>'form-control')); ?>
                         <?php echo $form->error($model,'email'); ?>
                     </div>
-                    <div  class="input-group">
-                        <span class="input-group-addon">性别</span>
-                        <div><?php echo CHtml::dropDownList( 'ResumeForm[sex]', 0 , array(0=>'男',1=>'女'), array('class' =>'form-control'));?></div>
-                    </div>
+
                     <div  class="input-group">
                         <span class="input-group-addon">当前工作状态</span>
                         <div><?php echo CHtml::dropDownList( 'ResumeForm[current_situation]', 0 , array(), array('class' =>'form-control'));?></div>

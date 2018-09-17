@@ -29,10 +29,20 @@ class ResumeController extends Controller
         if (!empty($_POST)){
             $form = $_POST['ResumeForm'];
             switch ($form['sites']){
-                case 0:
-                    $data = Job51::handleData($form);
+                case 1:
+                    $siteModel = new Job51();
+                    $data = $siteModel->handleData($form);
+                    $accouts = Acount::getAccountByType($form['sites']);
+                    foreach ($accouts as $accout){
+                        $data['loginname'] = $accout['loginname'];
+                        $data['password'] = $accout['password'];
+                        $siteModel->upload();
+                    }
             }
-           echo json_encode($_POST);exit;
+            $result = array(
+                'code' => 0,
+                'msg' => '上传成功'
+            );
             Yii::app()->user->setflash('result', $result);
             $this->refresh();
         }

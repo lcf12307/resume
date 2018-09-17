@@ -124,7 +124,7 @@ class Job51 extends CFormModel
                 "ccompname" => $params[5]    //所属公司
             );
         }
-        $schools = isset($data['schools'])?$data['schools']:array();
+        $schools = isset($data['scools'])?$data['scools']:array();
         $result['education'] = array();
         foreach ($schools as $school) {
             $params = explode('_', $school);
@@ -203,6 +203,7 @@ class Job51 extends CFormModel
                 "cdescribe" =>$params[5],
             );
         }
+        return $result;
     }
     //todo 删除多余信息， 上传头像，上传更多信息的功能
     function upload(){
