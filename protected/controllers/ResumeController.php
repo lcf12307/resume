@@ -36,7 +36,7 @@ class ResumeController extends Controller
                     foreach ($accouts as $accout){
                         $data['loginname'] = $accout['loginname'];
                         $data['password'] = $accout['password'];
-                        $siteModel->upload();
+                        $siteModel->upload($data);
                     }
             }
             $result = array(
