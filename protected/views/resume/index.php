@@ -284,11 +284,12 @@ $this->pageTitle=Yii::app()->name;
                     '公司性质': $('#companytype').find("option:selected").text(),
                     '工作描述': $('#cworkdescribe').val(),
                     '工作类型': $('#worktype').find("option:selected").text(),
+                    '是否有海外经历': $('#workoverseas').find("option:selected").text()
                 };
                 var append='<div><label class="btn-info delete" >'+JSON.stringify(work)+'</label>';
 
                 work = work['开始时间']+'_'+work['结束时间']+'_'+work['公司名']+'_'+$('#workfunc2').val()+'_'+$('#workindustry2').val()+'_'+work['职位']+'_'
-                    +$('#companysize').val()+'_'+work['部门']+'_'+$('#companytype').val()+'_'+work['工作描述']+'_'+$('#worktype').val();
+                    +$('#companysize').val()+'_'+work['部门']+'_'+$('#companytype').val()+'_'+work['工作描述']+'_'+$('#worktype').val()+'_'+$('#workoverseas').val();
                 append += '<input type="hidden" name="ResumeForm[works][]" value="'+work+'">';
                 $('#work_inserted').append(append);
                 $('#timefrom').val('');
@@ -343,7 +344,8 @@ $this->pageTitle=Yii::app()->name;
                 };
                 var append='<div><label class="btn-info delete" >'+JSON.stringify(school)+'</label>';
 
-                school = school['入学时间']+'_'+ school['结束时间']+'_'+ school['学校名']+'_'+ $('#degree').val()+'_'+ $('#major2').val()+'_'+ $('#isfulltime').val()
+                school = school['入学时间']+'_'+ school['结束时间']+'_'+ school['学校名']+'_'+ $('#degree').val()+'_'
+                    + $('#major2').val()+'_'+ $('#major2').find("option:selected").text()+'_'+ $('#isfulltime').val()
                     +'_'+ school['专业描述']+'_'+ $('#isoverseas').val();
                 append += '<input type="hidden" name="ResumeForm[scools][]" value="'+school+'">';
                 $('#school_inserted').append(append);
@@ -493,9 +495,9 @@ $this->pageTitle=Yii::app()->name;
 
                     <div  class="input-group">
                         <span class="input-group-addon">工作年限</span>
-                        <div><?php echo CHtml::dropDownList( 'ResumeForm[workyear]', 0 , array(), array('class' =>'form-control') );?></div>
+                        <div><?php echo CHtml::dateField( 'ResumeForm[workyear]', '', array('class' =>'form-control'));?>
+                        </div>
                     </div>
-
                     <div  class="input-group">
                         <span class="input-group-addon">手机号</span>
                         <?php echo $form->telField($model,'mobilephone', array('class' =>'form-control')); ?>
@@ -507,7 +509,10 @@ $this->pageTitle=Yii::app()->name;
                         <?php echo $form->emailField($model,'email', array('class' =>'form-control')); ?>
                         <?php echo $form->error($model,'email'); ?>
                     </div>
-
+                    <div  class="input-group">
+                        <span class="input-group-addon">性别</span>
+                        <div><?php echo CHtml::dropDownList( 'ResumeForm[sex]', 0 , array(0=>'男',1=>'女'), array('class' =>'form-control'));?></div>
+                    </div>
                     <div  class="input-group">
                         <span class="input-group-addon">当前工作状态</span>
                         <div><?php echo CHtml::dropDownList( 'ResumeForm[current_situation]', 0 , array(), array('class' =>'form-control'));?></div>
@@ -653,6 +658,10 @@ $this->pageTitle=Yii::app()->name;
                     <div  class="input-group">
                         <span class="input-group-addon">工作类型</span>
                         <div ><?php echo CHtml::dropDownList( 'worktype', 0 , array(0=>'全职', 1=>'兼职'), array('class' =>'form-control'));?></div>
+                    </div>
+                    <div  class="input-group">
+                        <span class="input-group-addon">海外经历</span>
+                        <div ><?php echo CHtml::dropDownList( 'workoverseas', 0 , array(0=>'无海外经历',1=>'有海外经历'), array('class' =>'form-control'));?></div>
                     </div>
                 </div>
             </div>

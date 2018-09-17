@@ -27,6 +27,11 @@ class ResumeController extends Controller
         $util = new Util();
         $model = new ResumeForm();
         if (!empty($_POST)){
+            $form = $_POST['ResumeForm'];
+            switch ($form['sites']){
+                case 0:
+                    $data = Job51::handleData($form);
+            }
            echo json_encode($_POST);exit;
             Yii::app()->user->setflash('result', $result);
             $this->refresh();

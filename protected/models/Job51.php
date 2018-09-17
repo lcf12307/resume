@@ -37,7 +37,174 @@ class Job51 extends CFormModel
     const skillCertificationUrl = 'https://i.51job.com/resume/ajax/skillcertification.php?action=save';     //证书
     const skillTrainUlr = 'https://i.51job.com/resume/ajax/skilltrain.php?action=save';                     //培训经历
 
-    //todo 删除多余信息， 上传头像，上传更多信息的功能，信息存到数据库里
+    public static function handleData($data){
+        $result = array(
+            'verifycode' => '',
+            //简历id
+            'resume_id' => '',
+            //基础信息
+            'isenglish' => 'c',     //默认为c
+            'efirstname' => '',
+            "ename" => "",
+            "idtype" => "0",
+            "idcard" => "",
+            "hukou" => "",
+            "marriage" => "",
+            "politics_status" => "",
+            "contacttype" => "00",
+            "othercontacts" => "",
+            "stature" => "",        //身高
+            "address" => "",        //地址
+            "zipcode" => "",
+            "homepage" => "",
+            "birthday" => "1996/11/01",
+            //薪酬信息
+            'basesalary' => 12, //基本工资
+            'bonus' => 32,  //补贴
+            'allowance' => 32, //奖金佣金
+            'stock' => 24,  //股权收益
+        );
+        $keys = array(
+            'cname',
+            'workyear',
+            'mobilephone',
+            'email',
+            'current_situation',
+            'salary',
+            'area',
+            'expectarea',
+            'seektype',
+            'selfintro',
+            'entrytime',
+            'resumekey',
+            'expectposition',
+            'expectfunc',
+            'expectindustry',
+            'salarytype',
+            'inputsalary',
+        );
+        foreach ($keys as $key){
+            $result[$key] = $data[$key];
+        }
+        $works = isset($data['works'])?$data['works']:array();
+        $result['work'] = array();
+        foreach ($works as $work) {
+            $params = explode('_', $work);
+            $result['work'][] = array(
+                "workid" => "",
+                "timefrom" => $params[0],
+                "timeto" => $params[1],
+                "ccompname" => $params[2],
+                "workfunc" => $params[3],
+                "workindustry" => $params[4],
+                "cposition" => $params[5],
+                "companysize" => $params[6],
+                "cdepartment" => $params[7],
+                "companytype" => $params[8],
+                "cworkdescribe" => $params[9],
+                "worktype" => $params[10],
+                "reportperson" => "",
+                "creportboss" => "",
+                "cleavereason" => "",
+                "cscore" => "",
+                "isoverseas" => $params[11]
+            );
+        }
+        $projects = isset($data['projects'])?$data['projects']:array();
+        $result['project'] = array();
+        foreach ($projects as $project) {
+            $params = explode('_', $project);
+            $result['project'][] = array(
+                "projectid" => "",
+                "starttime" => $params[0],    //开始时间
+                "endtime" => $params[1],            //结束时间
+                "cprojectname" => $params[2],      //项目名
+                "cdescribe" => $params[3],         //项目描述
+                "cfunction" => $params[4],         //责任描述
+                "ccompname" => $params[5]    //所属公司
+            );
+        }
+        $schools = isset($data['schools'])?$data['schools']:array();
+        $result['education'] = array();
+        foreach ($schools as $school) {
+            $params = explode('_', $school);
+            $result['education'][] = array(
+                "eduid" => "",
+                "timefrom" => $params[0],     //入学时间
+                "timeto" => $params[1],             //结束时间
+                "cschoolname" => $params[2], // 大学名字
+                "major" => $params[4],          //专业id
+                "cmajordes" => $params[5],//专业名
+                "degree" => $params[3],            //学历    1初中及以下，2，高中，3中技，4中专，5，大专，6，本科，7硕士,8博士，9MBA
+                "cdescribe" => $params[7],         //专业描述
+                "isoverseas" => $params[8],        //海外经历
+                "isfulltime" => $params[6]        //全日制
+            );
+        }
+        $practices = isset($data['practices'])?$data['practices']:array();
+        $result['schooljob'] = array();
+        foreach ($practices as $practice) {
+            $params = explode('_', $practice);
+            $result['schooljob'][] = array(
+                "practiceid" => "",
+                "starttime" => $params[0],
+                "endtime" => $params[1],
+                "cname" => $params[2],
+                "cdescribe" => $params[3],
+            );
+        }
+        $skills = isset($data['skills'])?$data['skills']:array();
+        $result['skilllanguage'] = array();
+        foreach ($skills as $skill) {
+            $params = explode('_', $skill);
+            $result['skilllanguage'][] = array(
+                "itskillid" => "",
+                "ittype" => $params[0],
+                "ability" => $params[1],
+                "skillsname" =>'',
+            );
+        }
+
+        $certs = isset($data['certs'])?$data['certs']:array();
+        $result['skillcertification'] = array();
+        foreach ($certs as $cert) {
+            $params = explode('_', $cert);
+            $result['skillcertification'][] = array(
+                "certid" => "",
+                "getdate" => $params[0],
+                "certlist" => $params[1],
+                "score" =>$params[2],
+            );
+        }
+
+        $awards = isset($data['awards'])?$data['awards']:array();
+        $result['schoolaward'] = array();
+        foreach ($awards as $award) {
+            $params = explode('_', $award);
+            $result['schoolaward'][] = array(
+                "bonusid" => "",
+                "bonustime" => $params[0],
+                "cbonusname" => $params[1],
+                "cbonusclass" =>$params[2],
+            );
+        }
+
+        $trains = isset($data['trains'])?$data['trains']:array();
+        $result['skilltrain'] = array();
+        foreach ($trains as $train) {
+            $params = explode('_', $train);
+            $result['skilltrain'][] = array(
+                "trainid" => "",
+                "timefrom" => $params[0],
+                "timeto" => $params[1],
+                "ctrainname" =>$params[2],
+                "ctrainplace" =>$params[3],
+                "ctrainlesson" =>$params[4],
+                "cdescribe" =>$params[5],
+            );
+        }
+    }
+    //todo 删除多余信息， 上传头像，上传更多信息的功能
     function upload(){
 
         $this->params = array(
@@ -454,5 +621,154 @@ class Job51 extends CFormModel
         }
         return empty($result)?'':$result[count($result)-1];
 
+    }
+    function getInput(){
+        return array(
+            //登录信息
+            'loginname' => '13121152878',
+            'password' => 'bnm,.123',
+            'verifycode' => '',
+            //简历id
+            'resume_id' => '',
+            //基础信息
+            'isenglish' => 'c',     //默认为c
+            'cname' => 'ouyangjiang',    //名字
+            'efirstname' => '',
+            "ename" => "",
+            "sex" => "1",
+            "workyear" => "2013",
+            "mobilephone" => "13121152878",
+            "email" => "lcf12307@qq.com",
+            "current_situation" => "3",     //当前工作状态， 0是正在找，3是观望中，4是不想找
+            "area" => "010500",
+            "idtype" => "0",
+            "idcard" => "",
+            "hukou" => "",
+            "marriage" => "",
+            "politics_status" => "",
+            "contacttype" => "00",
+            "othercontacts" => "",
+            "stature" => "",        //身高
+            "address" => "",        //地址
+            "zipcode" => "",
+            "homepage" => "",
+            "birthday" => "1996/11/01",
+            //薪酬信息
+            'salary' => 100,
+            'basesalary' => 12, //基本工资
+            'bonus' => 32,  //补贴
+            'allowance' => 32, //奖金佣金
+            'stock' => 24,  //股权收益
+            //求职意向
+            "seektype" => "1",                      // 0 全职 1，兼职， 2实习，3， 全职兼职
+            "expectindustry" => "02,39",            //期望行业
+            "expectfunc" => "2607,2601",            //期望职能
+            "expectarea" => "040000,030800,060000",//期望地区
+            "selfintro" => "自我评价",      //自我评价
+            "entrytime" => "1",             //入职时间  1随时，2 一周内3，一月内，4，三个月内，5，待定
+            "resumekey" => "1 2",           //个人标签
+            "salarytype" => "4",            //薪资类型 1是月薪，4是年薪，3日薪,2时薪
+            "expectposition" => "1",        //期望职位
+            "inputsalary" => "01",          //收入钱数 自定义是8-10格式
+            //工作经历
+            'work' => array(
+                array(
+                    "workid" => "",
+                    "timefrom" => "2014/1",
+                    "timeto" => "2015/1",
+                    "ccompname" => "美的集团",
+                    "workfunc" => "2903",
+                    "workindustry" => "35",
+                    "cposition" => "电子工程师/技术员",
+                    "companysize" => "1",
+                    "cdepartment" => "info",
+                    "companytype" => "01",
+                    "cworkdescribe" => "success",
+                    "worktype" => "0",
+                    "reportperson" => "100",
+                    "creportboss" => "1",
+                    "cleavereason" => "no",
+                    "cscore" => "wo",
+                    "isoverseas" => "0"
+                )
+            ),
+            //校内奖励
+            'schoolaward' => array(
+                array(
+                    "bonusid" => "",
+                    "bonustime" => "2008/1",   //获奖时间
+                    "cbonusname" => "奖项",        //奖项
+                    "cbonusclass" => "级别"        //级别
+                ),
+            ),
+            //校内工作
+            'schooljob' => array(
+                array(
+                    "practiceid" => "",
+                    "starttime" => "2010/1",    //开始时间
+                    "endtime" => "",            //至今为空
+                    "cname" => "职务",             //职务
+                    "cdescribe" => "职务描述"          //职务描述
+                )
+            ),
+            //项目经历
+            'project' => array(
+                array(
+                    "projectid" => "",
+                    "starttime" => "2006/2",    //开始时间
+                    "endtime" => "",            //结束时间
+                    "cprojectname" => "项目名",      //项目名
+                    "cdescribe" => "项目描述",         //项目描述
+                    "cfunction" => "责任描述",         //责任描述
+                    "ccompname" => "所属公司"    //所属公司
+                )
+            ),
+            //教育经历
+            'education' => array(
+                array(
+                    "eduid" => "",
+                    "timefrom" => "2014/9",     //入学时间
+                    "timeto" => "2018/7",             //结束时间
+                    "cschoolname" => "安徽大学", // 大学名字
+                    "major" => "0718",          //专业id
+                    "cmajordes" => "对外汉语",//专业名
+                    "degree" => "6",            //学历    1初中及以下，2，高中，3中技，4中专，5，大专，6，本科，7硕士,8博士，9MBA
+                    "cdescribe" => "专业描述",         //专业描述
+                    "isoverseas" => "0",        //海外经历
+                    "isfulltime" => "1"         //全日制
+                )
+            ),
+            //语言技能
+            'skilllanguage' => array(
+                array(
+                    "itskillid" => "",
+                    "ittype" => "0205",         //技能id
+                    "ability" => "1",           //2一般，3良好，1，熟练，0精通
+                    "skillsname" => ""          //为空
+                )
+            ),
+            //证书
+            'skillcertification' => array(
+                array(
+                    "certid" => "",
+                    "certlist" => "0126",   //证书id
+                    "certname" => "",
+                    "getdate" => "2017/9",  //获取时间
+                    "score" => "100"          //成绩
+                )
+            ),
+            //培训
+            'skilltrain' => array(
+                array(
+                    "trainid" => "",
+                    "timefrom" => "2016/2",//开始
+                    "timeto" => "2018/1",         //结束
+                    "ctrainname" => "培训机构",    //培训机构
+                    "ctrainplace" => "培训地点",   //培训地点
+                    "ctrainlesson" => "培训课程",  //培训课程
+                    "cdescribe" => "培训描述"      //培训描述
+                )
+            )
+        );
     }
 }
