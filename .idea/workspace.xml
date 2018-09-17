@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2f755d23-f1a9-447f-ba48-a7b1482d5de2" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/protected/controllers/ResumeController.php" afterPath="$PROJECT_DIR$/protected/controllers/ResumeController.php" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Job51.php" afterPath="$PROJECT_DIR$/protected/models/Job51.php" />
-      <change beforePath="$PROJECT_DIR$/protected/models/Util.php" afterPath="$PROJECT_DIR$/protected/models/Util.php" />
-      <change beforePath="$PROJECT_DIR$/protected/runtime/application.log" afterPath="$PROJECT_DIR$/protected/runtime/application.log" />
       <change beforePath="$PROJECT_DIR$/protected/views/resume/index.php" afterPath="$PROJECT_DIR$/protected/views/resume/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/protected/views/resume/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="511" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
+            <state relative-caret-position="259">
+              <caret line="297" column="40" lean-forward="false" selection-start-line="297" selection-start-column="40" selection-end-line="297" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -61,10 +57,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Util.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Util.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/protected/models/Util.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
+            <state relative-caret-position="1672">
               <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
               <folding />
             </state>
@@ -122,10 +118,10 @@
         <option value="$PROJECT_DIR$/protected/views/resume/js/index.js" />
         <option value="$PROJECT_DIR$/framework/yiilite.php" />
         <option value="$PROJECT_DIR$/protected/models/ResumeForm.php" />
-        <option value="$PROJECT_DIR$/protected/views/resume/index.php" />
         <option value="$PROJECT_DIR$/protected/models/Job51.php" />
         <option value="$PROJECT_DIR$/protected/controllers/ResumeController.php" />
         <option value="$PROJECT_DIR$/protected/models/Util.php" />
+        <option value="$PROJECT_DIR$/protected/views/resume/index.php" />
       </list>
     </option>
   </component>
@@ -240,7 +236,7 @@
       <option name="presentableId" value="Default" />
       <updated>1536339931972</updated>
       <workItem from="1536339936408" duration="4317000" />
-      <workItem from="1536943430912" duration="46928000" />
+      <workItem from="1536943430912" duration="47453000" />
     </task>
     <task id="LOCAL-00001" summary="js">
       <created>1537110263712</created>
@@ -270,11 +266,18 @@
       <option name="project" value="LOCAL" />
       <updated>1537197383810</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="处理数据">
+      <created>1537199798687</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1537199798687</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51245000" />
+    <option name="totallyTimeSpent" value="51770000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -444,14 +447,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/views/resume/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="511" column="0" lean-forward="false" selection-start-line="511" selection-start-column="0" selection-end-line="511" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Job51.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
@@ -470,8 +465,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Util.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
+        <state relative-caret-position="1672">
           <caret line="94" column="0" lean-forward="false" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/views/resume/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="297" column="40" lean-forward="false" selection-start-line="297" selection-start-column="40" selection-end-line="297" selection-end-column="40" />
           <folding />
         </state>
       </provider>

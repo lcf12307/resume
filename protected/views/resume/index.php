@@ -295,6 +295,7 @@ $this->pageTitle=Yii::app()->name;
                 $('#timefrom').val('');
                 $('#timeto').val('');
                 $('#ccompname').val('');
+                $('#cposition').val('');
                 var func_string = oFTM[$('#workfunc1').val()];
                 var funcs = func_string.split(',');
                 $('#workfunc2').empty();
