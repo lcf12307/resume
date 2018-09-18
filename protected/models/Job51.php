@@ -215,7 +215,8 @@ class Job51 extends CFormModel
         $this->cookie = $result['cookie'];
         $status = $this->check();
         if (!$status){
-            $this->params['verifycode'] = $this->getVerifyCode( 0);
+            $verifyCode = $this->getVerifyCode( 0);
+            $this->params['verifycode'] = $verifyCode['result'];
             $result = $this->login();
             $this->cookie = $result['cookie'];
             $status = $this->check();

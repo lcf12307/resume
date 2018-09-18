@@ -647,7 +647,7 @@ $this->pageTitle=Yii::app()->name;
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">部门</span>
-                        <div ><?php echo CHtml::textArea( 'cdepartment', '' , array('class' =>'form-control'));?></div>
+                        <div ><?php echo CHtml::textField( 'cdepartment', '' , array('class' =>'form-control'));?></div>
                     </div>
                     <div  class="input-group">
                         <span class="input-group-addon">公司性质</span>
