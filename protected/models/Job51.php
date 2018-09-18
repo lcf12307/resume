@@ -258,7 +258,7 @@ class Job51 extends CFormModel
             }
         }
         $info['basic'] = json_encode($info['basic']);
-
+        unlink($this->cookie);
         //todo 把info存入数据库
 
 
