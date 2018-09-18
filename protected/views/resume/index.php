@@ -364,7 +364,7 @@ $this->pageTitle=Yii::app()->name;
                 };
                 var append='<div><label class="btn-info delete" >'+JSON.stringify(practice)+'</label>';
 
-                practice = practice['开始时间']+'_'+ practice['结束时间']+'_'+ practice['职务']+'_'
+                practice = practice['开始时间']+'_'+ practice['结束时间']+'_'+ practice['职务']
                     +'_'+ practice['职务描述'];
                 append += '<input type="hidden" name="ResumeForm[practices][]" value="'+practice+'">';
                 $('#practice_inserted').append(append);
@@ -493,7 +493,11 @@ $this->pageTitle=Yii::app()->name;
                         <span class="input-group-addon">性别</span>
                         <div ><?php echo CHtml::dropDownList( 'ResumeForm[sex]', 0 , array( 0 => '男', 1 => '女') , array('class' =>'form-control'));?></div>
                     </div>
-
+                    <div  class="input-group">
+                        <span class="input-group-addon">生日</span>
+                        <div><?php echo CHtml::dateField( 'ResumeForm[birthday]', '', array('class' =>'form-control'));?>
+                        </div>
+                    </div>
                     <div  class="input-group">
                         <span class="input-group-addon">工作年限</span>
                         <div><?php echo CHtml::dateField( 'ResumeForm[workyear]', '', array('class' =>'form-control'));?>

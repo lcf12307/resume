@@ -57,7 +57,6 @@ class Job51 extends CFormModel
             "address" => "",        //地址
             "zipcode" => "",
             "homepage" => "",
-            "birthday" => "1996/11/01",
             //薪酬信息
             'basesalary' => 12, //基本工资
             'bonus' => 32,  //补贴
@@ -66,7 +65,6 @@ class Job51 extends CFormModel
         );
         $keys = array(
             'cname',
-            'workyear',
             'mobilephone',
             'email',
             'current_situation',
@@ -82,10 +80,13 @@ class Job51 extends CFormModel
             'expectindustry',
             'salarytype',
             'inputsalary',
+            'sex',
         );
         foreach ($keys as $key){
             $result[$key] = $data[$key];
         }
+        $result['workyear'] = date('Y', strtotime($data['workyear']));
+        $result['birthday'] = date('Y/m/d', strtotime($data['birthday']));
         $works = isset($data['works'])?$data['works']:array();
         $result['work'] = array();
         foreach ($works as $work) {
@@ -226,8 +227,9 @@ class Job51 extends CFormModel
             }
         }
         $this->params['resume_id'] = $this->getResumes();
-        $this->uploadBasic();
+
         $this->uploadEmail();
+        $this->uploadIntention();
         // todo 暂时不开发上传手机的功能
 //        $result = $this->uploadPhone();
         $this->uploadSalary();
@@ -464,7 +466,7 @@ class Job51 extends CFormModel
         $util = new Util();
         //新建一个简历，并且保存
         $util->get(self::newResumeUrl, array(), $this->cookie);
-        $this->uploadBasic($this->cookie);
+        $this->uploadBasic();
         $result = $util->get(self::uidUrl, array(), $this->cookie);
         $result = mb_convert_encoding($result, 'utf-8', 'gbk');
         preg_match_all('/resumeid=(.*?)">/', $result, $resumes);
@@ -487,15 +489,15 @@ class Job51 extends CFormModel
             'resume_id' => '',
             //基础信息
             'isenglish' => 'c',     //默认为c
-            'cname' => 'ouyangjiang',    //名字
+            'cname' => '一群逗比',    //名字
             'efirstname' => '',
             "ename" => "",
-            "sex" => "1",
-            "workyear" => "2013",
+            "sex" => "0",
+            "workyear" => "2018-09-01",
             "mobilephone" => "13121152878",
-            "email" => "lcf12307@qq.com",
-            "current_situation" => "3",     //当前工作状态， 0是正在找，3是观望中，4是不想找
-            "area" => "010500",
+            "email" => "laksjfdljaslj@163.com",
+            "current_situation" => "0",     //当前工作状态， 0是正在找，3是观望中，4是不想找
+            "area" => "110201",
             "idtype" => "0",
             "idcard" => "",
             "hukou" => "",
@@ -507,7 +509,7 @@ class Job51 extends CFormModel
             "address" => "",        //地址
             "zipcode" => "",
             "homepage" => "",
-            "birthday" => "1996/11/01",
+            "birthday" => "2018-08-30",
             //薪酬信息
             'salary' => 100,
             'basesalary' => 12, //基本工资
