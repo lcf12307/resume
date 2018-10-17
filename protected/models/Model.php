@@ -24,7 +24,6 @@ class Model {
         } else {
             $where = $condition;
         }
-        $limit = dintval($limit);
         $sql = "DELETE FROM " . self::table($table) . " WHERE $where " . ($limit > 0 ? "LIMIT $limit" : '');
         return Yii::app()->Db->createCommand($sql)->execute();
     }
