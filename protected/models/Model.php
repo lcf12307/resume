@@ -11,6 +11,11 @@ class Model {
     private $table = '';
     private $pre = 'common_';
 
+    public function __construct($table = '')
+    {
+        $this->table = $table;
+    }
+
     public function delete($condition,$table = false, $limit = 0) {
         if (empty($condition)) {
             return false;
@@ -83,7 +88,8 @@ class Model {
     }
 
     private function table($table){
-        return $this->pre . empty($table)?$this->table:$table;
+        $table =  empty($table)?$this->table:$table;
+        return $this->pre . $table;
     }
 
     public static function getAppends($params){
