@@ -4701,3 +4701,16 @@ Stack trace:
 REQUEST_URI=/favicon.ico
 HTTP_REFERER=http://localhost/resume/index
 ---
+2018/09/25 15:07:04 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'password' cannot be null. The SQL statement executed was: INSERT INTO `account` (`loginname`, `password`, `type`) VALUES (:loginname, :password, :type).
+in /home/work/data/www/resume/protected/models/Acount.php (34)
+in /home/work/data/www/resume/protected/controllers/ResumeController.php (59)
+in /home/work/data/www/resume/index.php (13)
+2018/10/17 10:41:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://resume.myglife.cn/index.php?r=resume/test
+---
