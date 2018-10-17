@@ -1,0 +1,109 @@
+DROP TABLE
+IF
+	EXISTS `common_role`;
+CREATE TABLE `common_role` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`role` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '角色',
+	`did` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '部门id',
+	`identity` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '身份',
+	`power` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '权限',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '角色表';
+DROP TABLE
+IF
+	EXISTS `common_user`;
+CREATE TABLE `common_user` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '姓名',
+	`icon` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '头像',
+	`phone` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '手机号',
+	`password` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '密码',
+	`rid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '角色id',
+	`pid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '父亲id',
+	`question` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '问题数',
+	`answer` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '答案数',
+	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
+	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '用户表';
+DROP TABLE
+IF
+	EXISTS `common_division`;
+CREATE TABLE `common_division` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '部门名',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '部门表';
+DROP TABLE
+IF
+	EXISTS `common_category`;
+CREATE TABLE `common_category` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '分类',
+	`type` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '类型',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '分类(身份题目等等)表';
+DROP TABLE
+IF
+	EXISTS `common_question`;
+CREATE TABLE `common_question` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`cid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '分类',
+	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '题目名',
+	`question` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目',
+	`detail` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目详情',
+	`uid` INT NOT NULL DEFAULT 0 COMMENT '用户',
+	`star` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '收藏数',
+	`answer` NOT NULL DEFAULT 0 COMMENT '答案数',
+	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
+	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '题目表';
+DROP TABLE
+IF
+	EXISTS `common_answer`;
+CREATE TABLE `common_answer` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`qid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '题目',
+	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '回答',
+	`answer` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '答案',
+	`detail` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '答案详情',
+	`uid` INT NOT NULL DEFAULT 0 COMMENT '用户',
+	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
+	`like` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '点赞数',
+	`unlike` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '差评数',
+	`comment` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '评论数',
+	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '答案表';
+DROP TABLE
+IF
+	EXISTS `common_like`;
+CREATE TABLE `common_like` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`uid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '用户',
+	`tid` INT NOT NULL DEFAULT 0 COMMENT '目标id',
+	`type` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '类型',
+	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '点赞收藏表';
+DROP TABLE
+IF
+	EXISTS `common_comment`;
+CREATE TABLE `common_comment` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`uid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '用户',
+	`tid` INT NOT NULL DEFAULT 0 COMMENT '目标id',
+	`comment` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '评论内容',
+	`like` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '点赞数',
+	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
+	PRIMARY KEY ( `id` ),
+UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '评论表';
