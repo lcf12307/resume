@@ -211,6 +211,7 @@ class Job51 extends CFormModel
 
         $this->params = $data;
 
+
         $result = $this->login();
         $this->cookie = $result['cookie'];
         $status = $this->check();
@@ -451,13 +452,21 @@ class Job51 extends CFormModel
      * @return mixed|string
      */
     function getVerifyCode($type = 1){
-        switch ($type){
-            case 0: $url = self::loginCodeUrl;break;
-            case 1: $url = self::emailCodeUrl;break;
-            default: $url = self::emailCodeUrl;
-        }
         $util = new Util();
-        $result = $util->get($url, array(), $this->cookie);
+        switch ($type){
+            case 0:
+                $url = self::loginCodeUrl;
+                $result = $util->get($url, array(), $this->cookie);
+                //todo 增加对滑块验证的处理。51改版之后中间增加了一步获取验证方法的操作，如果是0就是滑块，是1就是验证码，现在只有返回1的时候才能操作
+                $method = $util->get('https://login.51job.com/ajax/verifymethod.php', array(), $this->cookie);
+                break;
+            case 1:
+                $url = self::emailCodeUrl;
+                $result = $util->get($url, array(), $this->cookie);break;
+            default:
+                $url = self::emailCodeUrl;
+                $result = $util->get($url, array(), $this->cookie);
+        }
         $result = bin2hex($result);
         $result = $util->recv_byte($result);
         return json_decode($result, true);

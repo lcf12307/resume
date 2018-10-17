@@ -80,8 +80,12 @@ class ResumeController extends Controller
 
     public function actionTest()
     {
-        $test = new Job51();
-        $test->upload();
+        $test = new Division('division');
+
+        $data = $test->delete(array(
+            'id' => 1
+        ));
+        var_dump($data);exit;
     }
 
 
