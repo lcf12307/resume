@@ -5007,3 +5007,74 @@ Stack trace:
 REQUEST_URI=/favicon.ico
 HTTP_REFERER=http://localhost/index.php/role/index
 ---
+2018/10/17 23:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/role/index
+---
+2018/10/17 23:42:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/role/index
+---
+2018/10/17 23:46:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in G:\resume\framework\web\CController.php:337
+Stack trace:
+#0 G:\resume\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 G:\resume\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 G:\resume\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#3 G:\resume\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#4 G:\resume\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 G:\resume\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 G:\resume\framework\web\CController.php(291): CFilterChain->run()
+#7 G:\resume\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 G:\resume\framework\web\CWebApplication.php(282): CController->run('view')
+#9 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('role/view')
+#10 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 G:\resume\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/role/view
+---
+2018/10/17 23:46:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/role/view
+---
+2018/10/17 23:46:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/role/index
+---
+2018/10/17 23:46:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/role/1
+---
+2018/10/17 23:47:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in G:\resume\framework\web\CWebApplication.php:286
+Stack trace:
+#0 G:\resume\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 G:\resume\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 G:\resume\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://localhost/index.php/role/index
+---
