@@ -30,7 +30,7 @@
 <div class="container" id="page">
 
 	<div>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
@@ -40,7 +40,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#"><?php echo CHtml::encode(Yii::app()->name); ?></a>
+                    <a class="navbar-brand" href="<?php echo Yii::app()->homeUrl?>"><?php echo CHtml::encode(Yii::app()->name); ?></a>
+
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -49,9 +50,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">后台管理 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">角色管理</a></li>
-                                <li><a href="#">部门管理</li>
-                                <li><a href="#">用户管理</a></li>
+                                <li><a href=<?php echo Yii::app()->homeUrl . "/role"?>>角色管理</a></li>
+                                <li><a href=<?php echo Yii::app()->homeUrl . "/division"?>>部门管理</li>
+                                <li><a href=<?php echo Yii::app()->homeUrl . "/user"?>>用户管理</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -77,15 +78,24 @@
                             </ul>
                         </li>
                     </ul>
-<!--                    <ul class="nav navbar-nav navbar-right">-->
-<!--                        <li class="dropdown">-->
-<!--                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">登录 <span class="caret"></span></a>-->
-<!--                            <ul class="dropdown-menu">-->
-<!--                                <li><a href="#">Action</a></li>-->
-<!--                                <li><a href="#">Another action</a></li>-->
-<!--                            </ul>-->
-<!--                        </li>-->
-<!--                    </ul>-->
+                    <ul class="nav navbar-nav navbar-right">
+                        <?php
+                            if (Yii::app()->user->isGuest){
+                                echo '<li><a href="' . Yii::app()->homeUrl . '/site/login">登录</a></li>';
+                            } else {
+                                echo '                        
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">' . Yii::app()->user->name . '<span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href=" '. Yii::app()->homeUrl  .'/site/page?view=about ">About</a></li>
+                                    <li><a href=" '. Yii::app()->homeUrl  .'/site/contact ">Contact</a></li>
+                                    <li><a href=" '. Yii::app()->homeUrl  .'/site/logout ">Logout</a></li>
+                                </ul>
+                            </li>';
+                            }
+                        ?>
+
+                    </ul>
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
@@ -101,9 +111,8 @@
 	<div class="clear"></div>
 
 	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Company.<br/>
+		Copyright &copy; <?php echo date('Y'); ?> by 家校社区.<br/>
 		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->

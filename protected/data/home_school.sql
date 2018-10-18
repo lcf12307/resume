@@ -56,14 +56,31 @@ CREATE TABLE `common_question` (
 	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '题目名',
 	`question` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目',
 	`detail` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目详情',
-	`uid` INT NOT NULL DEFAULT 0 COMMENT '用户',
+	`uid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '用户',
 	`star` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '收藏数',
-	`answer` NOT NULL DEFAULT 0 COMMENT '答案数',
+	`answer` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '答案数',
 	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
 	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
 	PRIMARY KEY ( `id` ),
 	UNIQUE KEY `id` ( `id` )
 ) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '题目表';
+
+DROP TABLE
+IF
+	EXISTS `common_repository`;
+CREATE TABLE `common_repository` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`cid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '分类',
+	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '知识库名',
+	`detail` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '知识库详情',
+	`uid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '用户',
+	`star` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '收藏数',
+	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
+	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '知识库表';
+
 DROP TABLE
 IF
 	EXISTS `common_answer`;
@@ -73,7 +90,7 @@ CREATE TABLE `common_answer` (
 	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '回答',
 	`answer` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '答案',
 	`detail` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '答案详情',
-	`uid` INT NOT NULL DEFAULT 0 COMMENT '用户',
+	`uid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '用户',
 	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
 	`like` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '点赞数',
 	`unlike` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '差评数',

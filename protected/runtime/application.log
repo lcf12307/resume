@@ -5078,3 +5078,56 @@ Stack trace:
 REQUEST_URI=/favicon.ico
 HTTP_REFERER=http://localhost/index.php/role/index
 ---
+2018/10/18 10:17:08 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+in /home/work/data/www/resume/index.php (13)
+2018/10/18 10:27:02 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+in /home/work/data/www/resume/index.php (13)
+2018/10/18 10:27:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'test.user' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `user`.
+in /home/work/data/www/resume/index.php (13)
+2018/10/18 16:29:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/user
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/10/18 16:29:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('user')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/user
+---
+2018/10/18 17:31:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /home/work/data/www/resume/framework/web/CController.php:486
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CController.php(270): CController->missingAction('about')
+#1 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/work/data/www/resume/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/about
+HTTP_REFERER=http://resume.myglife.cn/index.php
+---
+2018/10/18 18:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "about".' in /home/work/data/www/resume/framework/web/CController.php:486
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CController.php(270): CController->missingAction('about')
+#1 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('about')
+#2 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/about')
+#3 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#4 /home/work/data/www/resume/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/site/about
+HTTP_REFERER=http://resume.myglife.cn/index.php
+---
+2018/10/18 18:07:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "about".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('about')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/index.php/about
+---
