@@ -5131,3 +5131,137 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/index.php/about
 ---
+2018/10/19 14:17:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://resume.myglife.cn/index.php/role/index
+---
+2018/10/19 14:22:50 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.role" is not defined.' in /home/work/data/www/resume/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/auth/CWebUser.php(146): CComponent->__get('role')
+#1 /home/work/data/www/resume/protected/views/layouts/main.php(86): CWebUser->__get('role')
+#2 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#3 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#4 /home/work/data/www/resume/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/work/data...', Array, true)
+#5 /home/work/data/www/resume/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 /home/work/data/www/resume/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 /home/work/data/www/resume/framework/web/CBaseController.php(215): COutputProcessor->run()
+#8 /home/work/data/www/resume/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 /home/work/data/www/resume/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#11 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#12 /home/work/data/www/resume/framework/web/CController.php(787): CBaseController->renderFile('/home/work/data...', Array, true)
+#13 /home/work/data/www/resume/protected/controllers/RoleController.php(128): CController->render('index', Array)
+#14 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#15 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#19 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('index')
+#24 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#25 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /home/work/data/www/resume/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php/role/index
+---
+2018/10/19 14:24:06 [error] [exception.CException] exception 'CException' with message 'Property "CWebUser.password" is not defined.' in /home/work/data/www/resume/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/auth/CWebUser.php(146): CComponent->__get('password')
+#1 /home/work/data/www/resume/protected/views/layouts/main.php(86): CWebUser->__get('password')
+#2 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#3 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#4 /home/work/data/www/resume/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/work/data...', Array, true)
+#5 /home/work/data/www/resume/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 /home/work/data/www/resume/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 /home/work/data/www/resume/framework/web/CBaseController.php(215): COutputProcessor->run()
+#8 /home/work/data/www/resume/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 /home/work/data/www/resume/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#11 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#12 /home/work/data/www/resume/framework/web/CController.php(787): CBaseController->renderFile('/home/work/data...', Array, true)
+#13 /home/work/data/www/resume/protected/controllers/RoleController.php(128): CController->render('index', Array)
+#14 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#15 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#19 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('index')
+#24 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#25 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /home/work/data/www/resume/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php/role/index
+---
+2018/10/19 14:41:31 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.username" is not defined.' in /home/work/data/www/resume/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('username')
+#1 /home/work/data/www/resume/protected/views/layouts/main.php(86): CModule->__get('username')
+#2 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#3 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#4 /home/work/data/www/resume/framework/web/widgets/CContentDecorator.php(76): CBaseController->renderFile('/home/work/data...', Array, true)
+#5 /home/work/data/www/resume/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate('<div class="spa...')
+#6 /home/work/data/www/resume/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput('<div class="spa...')
+#7 /home/work/data/www/resume/framework/web/CBaseController.php(215): COutputProcessor->run()
+#8 /home/work/data/www/resume/framework/web/CBaseController.php(309): CBaseController->endWidget('CContentDecorat...')
+#9 /home/work/data/www/resume/protected/views/layouts/column2.php(22): CBaseController->endContent()
+#10 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#11 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#12 /home/work/data/www/resume/framework/web/CController.php(787): CBaseController->renderFile('/home/work/data...', Array, true)
+#13 /home/work/data/www/resume/protected/controllers/RoleController.php(128): CController->render('index', Array)
+#14 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#15 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#16 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#18 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#19 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#20 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#22 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('index')
+#24 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role/index')
+#25 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#26 /home/work/data/www/resume/index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/index.php/role/index
+---
+2018/10/19 15:08:29 [error] [php] Cannot use a scalar value as an array (/home/work/data/www/resume/framework/web/helpers/CHtml.php:2689)
+Stack trace:
+#0 /home/work/data/www/resume/protected/views/user/_form.php(72): CActiveForm->textField()
+#1 /home/work/data/www/resume/framework/web/CBaseController.php(126): require()
+#2 /home/work/data/www/resume/framework/web/CBaseController.php(95): UserController->renderInternal()
+#3 /home/work/data/www/resume/framework/web/CController.php(872): UserController->renderFile()
+#4 /home/work/data/www/resume/protected/views/user/create.php(18): UserController->renderPartial()
+#5 /home/work/data/www/resume/framework/web/CBaseController.php(126): require()
+#6 /home/work/data/www/resume/framework/web/CBaseController.php(95): UserController->renderInternal()
+#7 /home/work/data/www/resume/framework/web/CController.php(872): UserController->renderFile()
+#8 /home/work/data/www/resume/framework/web/CController.php(785): UserController->renderPartial()
+#9 /home/work/data/www/resume/protected/controllers/UserController.php(79): UserController->render()
+#10 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): UserController->actionCreate()
+#11 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams()
+#12 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): UserController->runAction()
+#13 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#14 /home/work/data/www/resume/framework/web/CController.php(1148): CAccessControlFilter->filter()
+#15 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): UserController->filterAccessControl()
+#16 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#17 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#18 /home/work/data/www/resume/framework/web/CController.php(265): UserController->runActionWithFilters()
+#19 /home/work/data/www/resume/framework/web/CWebApplication.php(282): UserController->run()
+#20 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#21 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#22 /home/work/data/www/resume/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/user/create
+in /home/work/data/www/resume/protected/views/user/_form.php (72)
+in /home/work/data/www/resume/protected/views/user/create.php (18)
+in /home/work/data/www/resume/protected/controllers/UserController.php (79)

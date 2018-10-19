@@ -25,7 +25,7 @@
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row hidden">
 		<?php echo $form->labelEx($model,'icon'); ?>
 		<?php echo $form->textField($model,'icon',array('size'=>36,'maxlength'=>36)); ?>
 		<?php echo $form->error($model,'icon'); ?>
@@ -55,21 +55,21 @@
 		<?php echo $form->error($model,'pid'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row hidden">
 		<?php echo $form->labelEx($model,'question'); ?>
 		<?php echo $form->textField($model,'question'); ?>
 		<?php echo $form->error($model,'question'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row hidden">
 		<?php echo $form->labelEx($model,'answer'); ?>
 		<?php echo $form->textField($model,'answer'); ?>
 		<?php echo $form->error($model,'answer'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row hidden">
 		<?php echo $form->labelEx($model,'addtime'); ?>
-		<?php echo $form->textField($model,'addtime'); ?>
+		<?php echo $form->textField($model,'addtime', array('value' => time())); ?>
 		<?php echo $form->error($model,'addtime'); ?>
 	</div>
 
