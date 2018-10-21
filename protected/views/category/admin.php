@@ -6,10 +6,13 @@ $this->breadcrumbs=array(
 	'Categories'=>array('index'),
 	'Manage',
 );
-
+$types = array(
+    0 => 'question',
+    1 => 'repository',
+);
 $this->menu=array(
-	array('label'=>'List Category', 'url'=>array('index')),
-	array('label'=>'Create Category', 'url'=>array('create')),
+	array('label'=>'List Category', 'url'=>array($types[$model->type])),
+	array('label'=>'Create Category', 'url'=>array('create?type='. $model->type)),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -47,7 +50,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'id',
 		'name',
-		'type',
+//		'type',
 		array(
 			'class'=>'CButtonColumn',
 		),

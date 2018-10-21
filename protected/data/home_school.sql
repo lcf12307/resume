@@ -17,9 +17,24 @@ CREATE TABLE `common_user` (
 	`id` INT ( 12 ) NOT NULL auto_increment,
 	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '姓名',
 	`icon` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '头像',
-	`phone` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '手机号',
+	`phone` BIGINT ( 12 ) NOT NULL DEFAULT 0 COMMENT '手机号',
 	`password` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '密码',
 	`rid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '角色id',
+	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
+	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
+	PRIMARY KEY ( `id` ),
+	UNIQUE KEY `id` ( `id` )
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '用户表';
+DROP TABLE
+IF
+	EXISTS `common_student`;
+CREATE TABLE `common_student` (
+	`id` INT ( 12 ) NOT NULL auto_increment,
+	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '姓名',
+	`icon` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '头像',
+	`phone` BIGINT ( 12 ) NOT NULL DEFAULT 0 COMMENT '手机号',
+	`birthday` INT ( 8 ) NOT NULL DEFAULT 0 COMMENT '生日',
+	`sex` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '性别',
 	`pid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '父亲id',
 	`question` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '问题数',
 	`answer` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '答案数',
@@ -27,7 +42,7 @@ CREATE TABLE `common_user` (
 	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
 	PRIMARY KEY ( `id` ),
 	UNIQUE KEY `id` ( `id` )
-) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '用户表';
+) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '学生表';
 DROP TABLE
 IF
 	EXISTS `common_division`;

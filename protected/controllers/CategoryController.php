@@ -28,7 +28,7 @@ class CategoryController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'question', 'repository'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -74,6 +74,7 @@ class CategoryController extends Controller
 				$this->redirect(array('view','id'=>$model->id));
 		}
 
+        $model->type = isset($_GET['type'])?$_GET['type']:0;
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -143,6 +144,31 @@ class CategoryController extends Controller
 		));
 	}
 
+    public function actionQuestion()
+    {
+        $model=new Category('search');
+        $model->unsetAttributes();  // clear any default values
+        $_GET['Category']['type'] = 0;
+        if(isset($_GET['Category']))
+            $model->attributes=$_GET['Category'];
+
+        $this->render('admin',array(
+            'model'=>$model,
+        ));
+    }
+
+    public function actionRepository()
+    {
+        $model=new Category('search');
+        $model->unsetAttributes();  // clear any default values
+        $_GET['Category']['type'] = 1;
+        if(isset($_GET['Category']))
+            $model->attributes=$_GET['Category'];
+
+        $this->render('admin',array(
+            'model'=>$model,
+        ));
+    }
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.

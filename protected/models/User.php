@@ -7,14 +7,12 @@
  * @property integer $id
  * @property string $name
  * @property string $icon
- * @property integer $phone
+ * @property string $phone
  * @property string $password
  * @property integer $rid
- * @property integer $pid
- * @property integer $question
- * @property integer $answer
  * @property integer $addtime
  * @property integer $status
+ * @property integer $type
  */
 class User extends CActiveRecord
 {
@@ -34,11 +32,12 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('phone, rid, pid, question, answer, addtime, status', 'numerical', 'integerOnly'=>true),
+			array('rid, addtime, status, type', 'numerical', 'integerOnly'=>true),
 			array('name, icon, password', 'length', 'max'=>36),
+			array('phone', 'length', 'max'=>12),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, phone, rid, pid, question, answer, status', 'safe', 'on'=>'search'),
+			array('id, name, icon, phone, password, rid, addtime, status, type', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -65,11 +64,9 @@ class User extends CActiveRecord
 			'phone' => 'Phone',
 			'password' => 'Password',
 			'rid' => 'Rid',
-			'pid' => 'Pid',
-			'question' => 'Question',
-			'answer' => 'Answer',
 			'addtime' => 'Addtime',
 			'status' => 'Status',
+			'type' => 'Type',
 		);
 	}
 
@@ -94,14 +91,12 @@ class User extends CActiveRecord
 		$criteria->compare('id',$this->id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('icon',$this->icon,true);
-		$criteria->compare('phone',$this->phone);
+		$criteria->compare('phone',$this->phone,true);
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('rid',$this->rid);
-		$criteria->compare('pid',$this->pid);
-		$criteria->compare('question',$this->question);
-		$criteria->compare('answer',$this->answer);
 		$criteria->compare('addtime',$this->addtime);
 		$criteria->compare('status',$this->status);
+		$criteria->compare('type',$this->type);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

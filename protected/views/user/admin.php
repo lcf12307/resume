@@ -6,10 +6,14 @@ $this->breadcrumbs=array(
 	'Users'=>array('index'),
 	'Manage',
 );
-
+$types = array(
+        0 => 'admin',
+        1 => 'teacher',
+        2 => 'student'
+);
 $this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Create User', 'url'=>array('create')),
+	array('label'=>'List User', 'url'=>array($types[$model->type])),
+	array('label'=>'Create User', 'url'=>array('create?type='. $model->type)),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -52,11 +56,9 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'password',
 		'rid',
 		/*
-		'pid',
-		'question',
-		'answer',
 		'addtime',
 		'status',
+		'type',
 		*/
 		array(
 			'class'=>'CButtonColumn',

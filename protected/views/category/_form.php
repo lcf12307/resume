@@ -25,7 +25,7 @@
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row hidden">
 		<?php echo $form->labelEx($model,'type'); ?>
 		<?php echo $form->textField($model,'type'); ?>
 		<?php echo $form->error($model,'type'); ?>

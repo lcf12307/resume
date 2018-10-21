@@ -27,10 +27,8 @@ $this->menu=array(
 		'phone',
 		'password',
 		'rid',
-		'pid',
-		'question',
-		'answer',
 		'addtime',
 		'status',
+		'type',
 	),
 )); ?>

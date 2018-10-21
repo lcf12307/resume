@@ -55,7 +55,7 @@ class Role extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'role' => '角色',
-			'did' => '部门id',
+			'did' => '角色id',
 			'identity' => '身份',
 			'power' => '权限',
 		);

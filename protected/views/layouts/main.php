@@ -52,7 +52,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href=<?php echo Yii::app()->homeUrl . "/role"?>>角色管理</a></li>
                                 <li><a href=<?php echo Yii::app()->homeUrl . "/division"?>>部门管理</li>
-                                <li><a href=<?php echo Yii::app()->homeUrl . "/user"?>>用户管理</a></li>
+                                <li><a href=<?php echo Yii::app()->homeUrl . "/user/admin"?>>用户管理</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -60,9 +60,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">会员管理 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo Yii::app()->homeUrl . "/user"?>">教师用户管理</a></li>
-                                <li><a href="<?php echo Yii::app()->homeUrl . "/user"?>">家长用户管理</li>
-                                <li><a href="<?php echo Yii::app()->homeUrl . "/user"?>">学生信息管理</a></li>
+                                <li><a href="<?php echo Yii::app()->homeUrl . "/user/teacher"?>">教师用户管理</a></li>
+                                <li><a href="<?php echo Yii::app()->homeUrl . "/user/parent"?>">家长用户管理</li>
+                                <li><a href="<?php echo Yii::app()->homeUrl . "/student"?>">学生信息管理</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -70,8 +70,8 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">错题管理 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo Yii::app()->homeUrl . "/category"?>">错题分类管理</a></li>
-                                <li><a href="<?php echo Yii::app()->homeUrl . "/category"?>">知识库分类管理</li>
+                                <li><a href="<?php echo Yii::app()->homeUrl . "/category/question"?>">错题分类管理</a></li>
+                                <li><a href="<?php echo Yii::app()->homeUrl . "/category/repository"?>">知识库分类管理</li>
                                 <li><a href="<?php echo Yii::app()->homeUrl . "/question"?>">题目管理</a></li>
                                 <li><a href="<?php echo Yii::app()->homeUrl . "/repository"?>">知识库管理</a></li>
                                 <li><a href="<?php echo Yii::app()->homeUrl . "/answer"?>">答案管理</a></li>

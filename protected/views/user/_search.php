@@ -28,27 +28,12 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone'); ?>
+		<?php echo $form->textField($model,'phone',array('size'=>12,'maxlength'=>12)); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->label($model,'rid'); ?>
 		<?php echo $form->textField($model,'rid'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'pid'); ?>
-		<?php echo $form->textField($model,'pid'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'question'); ?>
-		<?php echo $form->textField($model,'question'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->label($model,'answer'); ?>
-		<?php echo $form->textField($model,'answer'); ?>
 	</div>
 
 	<div class="row">
@@ -59,6 +44,11 @@
 	<div class="row">
 		<?php echo $form->label($model,'status'); ?>
 		<?php echo $form->textField($model,'status'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'type'); ?>
+		<?php echo $form->textField($model,'type'); ?>
 	</div>
 
 	<div class="row buttons">
