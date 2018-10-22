@@ -9,7 +9,7 @@ $types = array(
 );
 $this->breadcrumbs=array(
     'Categories'=>array('index'),
-    $types[$model->type],
+    $types[$model->type] => array($types[$model->type]),
 );
 $this->menu=array(
 	array('label'=>'List '.$types[$model->type].' Category', 'url'=>array($types[$model->type])),

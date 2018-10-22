@@ -12,6 +12,7 @@
  */
 class Role extends CActiveRecord
 {
+    
 	/**
 	 * @return string the associated database table name
 	 */
@@ -55,7 +56,7 @@ class Role extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'role' => '角色',
-			'did' => '角色id',
+			'did' => '部门id',
 			'identity' => '身份',
 			'power' => '权限',
 		);

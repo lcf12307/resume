@@ -30,7 +30,7 @@
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('addtime')); ?>:</b>
-	<?php echo CHtml::encode($data->addtime); ?>
+	<?php echo CHtml::encode(date('Y-m-d H:i:s', $data->addtime)); ?>
 	<br />
 
 	<?php /*
