@@ -2,17 +2,18 @@
 /* @var $this CategoryController */
 /* @var $model Category */
 
-$this->breadcrumbs=array(
-	'Categories'=>array('index'),
-	'Manage',
-);
+
 $types = array(
     0 => 'question',
     1 => 'repository',
 );
+$this->breadcrumbs=array(
+    'Categories'=>array('index'),
+    $types[$model->type],
+);
 $this->menu=array(
-	array('label'=>'List Category', 'url'=>array($types[$model->type])),
-	array('label'=>'Create Category', 'url'=>array('create?type='. $model->type)),
+	array('label'=>'List '.$types[$model->type].' Category', 'url'=>array($types[$model->type])),
+	array('label'=>'Create '.$types[$model->type].' Category', 'url'=>array('create?type='. $model->type)),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -29,7 +30,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Categories</h1>
+<h1>Manage <?php echo  $types[$model->type];?> Categories</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
