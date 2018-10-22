@@ -6361,3 +6361,87 @@ Stack trace:
 REQUEST_URI=/favicon.ico
 HTTP_REFERER=http://localhost/index.php/category/question
 ---
+2018/10/22 16:49:30 [error] [exception.CException] exception 'CException' with message 'RoleController cannot find the requested view "index".' in /home/work/data/www/resume/framework/web/CController.php:881
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#1 /home/work/data/www/resume/protected/controllers/RoleController.php(120): CController->render('index', Array)
+#2 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#3 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role')
+#13 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/work/data/www/resume/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/role
+HTTP_REFERER=http://resume.myglife.cn/index.php
+---
+2018/10/22 16:49:39 [error] [exception.CException] exception 'CException' with message 'RoleController cannot find the requested view "index".' in /home/work/data/www/resume/framework/web/CController.php:881
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#1 /home/work/data/www/resume/protected/controllers/RoleController.php(120): CController->render('index', Array)
+#2 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#3 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role')
+#13 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/work/data/www/resume/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/role
+HTTP_REFERER=http://resume.myglife.cn/index.php
+---
+2018/10/22 16:51:11 [error] [exception.CException] exception 'CException' with message 'RoleController cannot find the requested view "index".' in /home/work/data/www/resume/framework/web/CController.php:881
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#1 /home/work/data/www/resume/protected/controllers/RoleController.php(120): CController->render('index', Array)
+#2 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#3 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role')
+#13 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/work/data/www/resume/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/role
+HTTP_REFERER=http://resume.myglife.cn/index.php
+---
+2018/10/22 16:51:46 [error] [exception.CException] exception 'CException' with message 'RoleController cannot find the requested view "index".' in /home/work/data/www/resume/framework/web/CController.php:881
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#1 /home/work/data/www/resume/protected/controllers/RoleController.php(120): CController->render('index', Array)
+#2 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#3 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#7 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#10 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('')
+#12 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role')
+#13 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/work/data/www/resume/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/role
+HTTP_REFERER=http://resume.myglife.cn/index.php/division
+---
