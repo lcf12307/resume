@@ -49,10 +49,12 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'name',
 		'icon',
 		'phone',
+		'class',
 		'birthday',
-		'sex',
 		/*
+		'sex',
 		'pid',
+		'tid',
 		'question',
 		'answer',
 		'addtime',
