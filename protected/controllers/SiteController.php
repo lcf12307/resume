@@ -134,7 +134,7 @@ class SiteController extends Controller
             Yii::app()->user->setflash('result', $result);
             $this->refresh();
         }
-        $this->render('upload', array('sites' => $util->getSites(), 'selected' => 1));
+        $this->render('upload',array());
     }
 
 }
