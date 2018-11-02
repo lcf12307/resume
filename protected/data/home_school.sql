@@ -15,6 +15,7 @@ IF
 	EXISTS `common_user`;
 CREATE TABLE `common_user` (
 	`id` INT ( 12 ) NOT NULL auto_increment,
+	`openid` VARCHAR ( 100 ) NOT NULL DEFAULT '' COMMENT '微信标识',
 	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '姓名',
 	`icon` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '头像',
 	`phone` BIGINT ( 12 ) NOT NULL DEFAULT 0 COMMENT '手机号',

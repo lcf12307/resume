@@ -4,7 +4,7 @@
 
 $this->breadcrumbs=array(
 	'Roles'=>array('index'),
-	$model->id,
+	$model->name,
 );
 
 $this->menu=array(
@@ -22,9 +22,11 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id',
-		'role',
+		'name',
+		'type',
 		'did',
-		'identity',
-		'power',
+		'description',
+		'bizrule',
+		'data',
 	),
 )); ?>

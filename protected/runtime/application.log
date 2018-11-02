@@ -6520,3 +6520,662 @@ Stack trace:
 #10 {main}
 REQUEST_URI=/site/upload
 ---
+2018/10/25 11:14:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "resume/test".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('resume/test')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/resume/test
+---
+2018/10/26 12:38:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in /home/work/data/www/resume/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#2 /home/work/data/www/resume/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://resume.myglife.cn/
+---
+2018/11/01 12:48:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(86): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 12:49:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(86): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 12:51:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(86): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 12:55:28 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(86): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 12:55:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(86): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 12:56:51 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(78): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 12:59:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] Connection refused' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(78): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 14:55:12 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CApplication.php(459): CModule->getComponent('db')
+#4 /home/work/data/www/resume/framework/base/CComponent.php(111): CApplication->getDb()
+#5 /home/work/data/www/resume/framework/base/CModule.php(105): CComponent->__get('Db')
+#6 /home/work/data/www/resume/protected/models/Model.php(86): CModule->__get('Db')
+#7 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#8 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#9 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#13 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#14 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#15 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#16 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#18 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#19 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#20 /home/work/data/www/resume/index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 14:56:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No such file or directory' in /home/work/data/www/resume/framework/db/CDbConnection.php:399
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbConnection.php(347): CDbConnection->open()
+#1 /home/work/data/www/resume/framework/db/CDbConnection.php(325): CDbConnection->setActive(true)
+#2 /home/work/data/www/resume/framework/base/CModule.php(394): CDbConnection->init()
+#3 /home/work/data/www/resume/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /home/work/data/www/resume/protected/models/Model.php(86): CModule->__get('db')
+#5 /home/work/data/www/resume/protected/components/UserIdentity.php(30): Model->selectOne('*', Array)
+#6 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#7 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#8 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#9 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#10 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#11 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#12 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#13 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#14 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#16 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#17 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#18 /home/work/data/www/resume/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---
+2018/11/01 16:35:55 [error] [php] include(common_user.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/work/data/www/resume/framework/YiiBase.php:463)
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/SrbacModule.php(277): spl_autoload_call()
+#1 /home/work/data/www/resume/protected/modules/srbac/components/Helper.php(423): SrbacModule->getUserModel()
+#2 /home/work/data/www/resume/protected/modules/srbac/views/authitem/install/install.php(103): checkInstall()
+#3 /home/work/data/www/resume/framework/web/CBaseController.php(126): require()
+#4 /home/work/data/www/resume/framework/web/CBaseController.php(95): AuthitemController->renderInternal()
+#5 /home/work/data/www/resume/framework/web/CController.php(872): AuthitemController->renderFile()
+#6 /home/work/data/www/resume/framework/web/CController.php(785): AuthitemController->renderPartial()
+#7 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(495): AuthitemController->render()
+#8 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionInstall()
+#9 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /home/work/data/www/resume/framework/web/CController.php(286): AuthitemController->runAction()
+#11 /home/work/data/www/resume/framework/web/CController.php(265): AuthitemController->runActionWithFilters()
+#12 /home/work/data/www/resume/framework/web/CWebApplication.php(282): AuthitemController->run()
+#13 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#15 /home/work/data/www/resume/index.php(13): CWebApplication->run()
+REQUEST_URI=/index.php/srbac/authitem/install
+in /home/work/data/www/resume/protected/modules/srbac/SrbacModule.php (277)
+in /home/work/data/www/resume/protected/modules/srbac/components/Helper.php (423)
+in /home/work/data/www/resume/protected/modules/srbac/views/authitem/install/install.php (103)
+2018/11/01 16:51:30 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Administrator-6' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `auth_assignments` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php (72)
+in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php (188)
+in /home/work/data/www/resume/index.php (13)
+2018/11/01 16:51:30 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Administrator-6' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `auth_assignments` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in /home/work/data/www/resume/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbCommand.php(1278): CDbCommand->execute(Array)
+#1 /home/work/data/www/resume/framework/web/auth/CDbAuthManager.php(263): CDbCommand->insert('auth_assignment...', Array)
+#2 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(72): CDbAuthManager->assign('Administrator', '6', '', '')
+#3 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(188): AuthitemController->_assignUser('6', Array, '', '')
+#4 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionAssign()
+#5 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('assign')
+#9 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#10 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/work/data/www/resume/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/srbac/authitem/assign/assignRoles/1
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/assign
+---
+2018/11/02 09:29:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Administrator-Post Manager' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `auth_children` (`parent`, `child`) VALUES (:parent, :child).
+in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php (109)
+in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php (198)
+in /home/work/data/www/resume/index.php (13)
+2018/11/02 09:29:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'Administrator-Post Manager' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `auth_children` (`parent`, `child`) VALUES (:parent, :child)' in /home/work/data/www/resume/framework/db/CDbCommand.php:358
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/CDbCommand.php(1278): CDbCommand->execute(Array)
+#1 /home/work/data/www/resume/framework/web/auth/CDbAuthManager.php(165): CDbCommand->insert('auth_children', Array)
+#2 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(109): CDbAuthManager->addItemChild('Administrator', 'Post Manager')
+#3 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(198): AuthitemController->_assignChild('Administrator', Array)
+#4 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionAssign()
+#5 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#6 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#7 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('assign')
+#9 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#10 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#11 /home/work/data/www/resume/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/index.php/srbac/authitem/assign/assignTasks/1
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/assign
+---
+2018/11/02 14:19:29 [error] [exception.CException] exception 'CException' with message 'Property "AuthItem.name" is not defined.' in /home/work/data/www/resume/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/ar/CActiveRecord.php(145): CComponent->__get('name')
+#1 /home/work/data/www/resume/framework/web/helpers/CHtml.php(2749): CActiveRecord->__get('name')
+#2 /home/work/data/www/resume/framework/web/helpers/CHtml.php(1994): CHtml::resolveValue(Object(AuthItem), 'name[revoke]')
+#3 /home/work/data/www/resume/protected/modules/srbac/views/authitem/tabViews/userAjax.php(27): CHtml::activeDropDownList(Object(AuthItem), 'name[revoke]', Array, Array)
+#4 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#5 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#6 /home/work/data/www/resume/framework/web/CController.php(872): CBaseController->renderFile('/home/work/data...', Array, true)
+#7 /home/work/data/www/resume/protected/modules/srbac/views/authitem/tabViews/roleToUser.php(32): CController->renderPartial('tabViews/userAj...', Array)
+#8 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#9 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#10 /home/work/data/www/resume/framework/web/CController.php(872): CBaseController->renderFile('/home/work/data...', Array, true)
+#11 /home/work/data/www/resume/framework/web/widgets/CTabView.php(217): CController->renderPartial('tabViews/roleTo...', Array)
+#12 /home/work/data/www/resume/framework/web/widgets/CTabView.php(149): CTabView->renderBody()
+#13 /home/work/data/www/resume/framework/web/CBaseController.php(182): CTabView->run()
+#14 /home/work/data/www/resume/protected/modules/srbac/views/authitem/assign.php(57): CBaseController->widget('system.web.widg...', Array)
+#15 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#16 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#17 /home/work/data/www/resume/framework/web/CController.php(872): CBaseController->renderFile('/home/work/data...', Array, true)
+#18 /home/work/data/www/resume/framework/web/CController.php(785): CController->renderPartial('assign', Array, true)
+#19 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(217): CController->render('assign', Array)
+#20 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionAssign()
+#21 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#22 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#23 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('assign')
+#25 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#26 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#27 /home/work/data/www/resume/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/index.php/srbac/authitem/assign
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 14:19:57 [error] [exception.CException] exception 'CException' with message 'Property "AuthItem.data" is not defined.' in /home/work/data/www/resume/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/ar/CActiveRecord.php(145): CComponent->__get('data')
+#1 /home/work/data/www/resume/protected/modules/srbac/models/AuthItem.php(108): CActiveRecord->__get('data')
+#2 /home/work/data/www/resume/framework/db/ar/CActiveRecord.php(1874): AuthItem->afterFind()
+#3 /home/work/data/www/resume/framework/db/ar/CActiveRecord.php(1895): CActiveRecord->populateRecord(Array, true)
+#4 /home/work/data/www/resume/framework/db/ar/CActiveRecord.php(1359): CActiveRecord->populateRecords(Array, true, NULL)
+#5 /home/work/data/www/resume/framework/db/ar/CActiveRecord.php(1478): CActiveRecord->query(Object(CDbCriteria), true)
+#6 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(534): CActiveRecord->findAll(Object(CDbCriteria))
+#7 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionManage()
+#8 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#9 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#10 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('manage')
+#12 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#13 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#14 /home/work/data/www/resume/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/index.php/srbac/authitem/manage
+---
+2018/11/02 14:39:09 [error] [exception.CException] exception 'CException' with message 'Property "Role.role" is not defined.' in /home/work/data/www/resume/framework/base/CComponent.php:130
+Stack trace:
+#0 /home/work/data/www/resume/framework/db/ar/CActiveRecord.php(145): CComponent->__get('role')
+#1 /home/work/data/www/resume/protected/views/role/_view.php(13): CActiveRecord->__get('role')
+#2 /home/work/data/www/resume/framework/web/CBaseController.php(130): require('/home/work/data...')
+#3 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, false)
+#4 /home/work/data/www/resume/framework/zii/widgets/CListView.php(291): CBaseController->renderFile('/home/work/data...', Array)
+#5 /home/work/data/www/resume/framework/zii/widgets/CBaseListView.php(181): CListView->renderItems()
+#6 [internal function]: CBaseListView->renderSection(Array)
+#7 /home/work/data/www/resume/framework/zii/widgets/CBaseListView.php(164): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{sort...')
+#8 /home/work/data/www/resume/framework/zii/widgets/CBaseListView.php(149): CBaseListView->renderContent()
+#9 /home/work/data/www/resume/framework/web/CBaseController.php(182): CBaseListView->run()
+#10 /home/work/data/www/resume/protected/views/role/index.php(20): CBaseController->widget('zii.widgets.CLi...', Array)
+#11 /home/work/data/www/resume/framework/web/CBaseController.php(126): require('/home/work/data...')
+#12 /home/work/data/www/resume/framework/web/CBaseController.php(95): CBaseController->renderInternal('/home/work/data...', Array, true)
+#13 /home/work/data/www/resume/framework/web/CController.php(872): CBaseController->renderFile('/home/work/data...', Array, true)
+#14 /home/work/data/www/resume/framework/web/CController.php(785): CController->renderPartial('index', Array, true)
+#15 /home/work/data/www/resume/protected/controllers/RoleController.php(120): CController->render('index', Array)
+#16 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): RoleController->actionIndex()
+#17 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#18 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 /home/work/data/www/resume/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#20 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#21 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#22 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#24 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('')
+#26 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role')
+#27 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#28 /home/work/data/www/resume/index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/index.php/role
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/frontpage
+---
+2018/11/02 15:16:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(382): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionUpdate()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('update')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/update/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:16:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(382): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionUpdate()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('update')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/update/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:21:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(382): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionUpdate()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('update')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/update/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:21:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(382): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionUpdate()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('update')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/update/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:21:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(382): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionUpdate()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('update')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/update/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:22:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:22:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/Post%2BManager
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:24:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/Post%2BManager
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 15:24:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/Post%2BManager
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 17:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 17:59:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 17:59:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(339): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionShow()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('show')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/show/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 18:00:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php:585
+Stack trace:
+#0 /home/work/data/www/resume/protected/modules/srbac/controllers/AuthitemController.php(382): AuthitemController->loadAuthItem()
+#1 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): AuthitemController->actionUpdate()
+#2 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#3 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#4 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('update')
+#6 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('srbac/authitem/...')
+#7 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#8 /home/work/data/www/resume/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/index.php/srbac/authitem/update/id/admin
+HTTP_REFERER=http://resume.myglife.cn/index.php/srbac/authitem/manage
+---
+2018/11/02 18:04:43 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/work/data/www/resume/framework/web/auth/CAccessControlFilter.php:183
+Stack trace:
+#0 /home/work/data/www/resume/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/work/data/www/resume/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/work/data/www/resume/framework/web/CController.php(1148): CFilter->filter(Object(CFilterChain))
+#3 /home/work/data/www/resume/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/work/data/www/resume/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/work/data/www/resume/framework/web/CController.php(291): CFilterChain->run()
+#6 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('role')
+#8 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('role/role')
+#9 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#10 /home/work/data/www/resume/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/role/role
+---
+2018/11/02 18:08:28 [error] [exception.CException] exception 'CException' with message 'Property "UserIdentity.id" is read only.' in /home/work/data/www/resume/framework/base/CComponent.php:170
+Stack trace:
+#0 /home/work/data/www/resume/protected/components/UserIdentity.php(45): CComponent->__set('id', '6')
+#1 /home/work/data/www/resume/protected/models/LoginForm.php(54): UserIdentity->authenticate()
+#2 /home/work/data/www/resume/framework/validators/CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#3 /home/work/data/www/resume/framework/validators/CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 /home/work/data/www/resume/framework/base/CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#5 /home/work/data/www/resume/protected/controllers/SiteController.php(94): CModel->validate()
+#6 /home/work/data/www/resume/framework/web/actions/CInlineAction.php(49): SiteController->actionLogin()
+#7 /home/work/data/www/resume/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /home/work/data/www/resume/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#9 /home/work/data/www/resume/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 /home/work/data/www/resume/framework/web/CWebApplication.php(282): CController->run('login')
+#11 /home/work/data/www/resume/framework/web/CWebApplication.php(141): CWebApplication->runController('site/login')
+#12 /home/work/data/www/resume/framework/base/CApplication.php(185): CWebApplication->processRequest()
+#13 /home/work/data/www/resume/index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/index.php/site/login
+HTTP_REFERER=http://resume.myglife.cn/index.php/site/login
+---

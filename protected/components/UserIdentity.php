@@ -24,7 +24,7 @@ class UserIdentity extends CUserIdentity
 //		);
 		$model = new Model('user');
 	    $result = $model->selectOne('*', array(
-		    'name' => $this->username,
+		    'id' => $this->username,
             'password' => $this->password,
             'type' => 0
         ));
@@ -32,15 +32,20 @@ class UserIdentity extends CUserIdentity
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
         } else {
 	        $this->errorCode=self::ERROR_NONE;
+	        $roots = array(
+	            6
+            );
+	        if ($result['id'] == 1){
+	            $this->role=0;
+            } elseif (in_array($result['id'], $roots)){
+	            $this->role = 1;
+            } else {
+	            $this->role = 2;
+            }
+            $this->id = $result['id'];
+	        $this->name = $result['name'];
         }
 
-//	    $this->userid = $result['id'];
-//		if(!isset($users[$this->username]))
-//			$this->errorCode=self::ERROR_USERNAME_INVALID;
-//		elseif($users[$this->username]!==$this->password)
-//			$this->errorCode=self::ERROR_PASSWORD_INVALID;
-//		else
-//			$this->errorCode=self::ERROR_NONE;
 		return !$this->errorCode;
 	}
 }

@@ -28,8 +28,16 @@ class RoleController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','create','update','admin','delete'),
+				'actions'=>array('index','view'),
+				'users'=>array('*'),
+			),
+			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+				'actions'=>array('create','update'),
 				'users'=>array('@'),
+			),
+			array('allow', // allow admin user to perform 'admin' and 'delete' actions
+				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -123,7 +131,7 @@ class RoleController extends Controller
 	/**
 	 * Manages all models.
 	 */
-	public function actionAdmin()
+	public function actionRole()
 	{
 		$model=new Role('search');
 		$model->unsetAttributes();  // clear any default values
@@ -135,6 +143,20 @@ class RoleController extends Controller
 		));
 	}
 
+    /**
+     * Manages all models.
+     */
+    public function actionDivision()
+    {
+        $model=new Role('search');
+        $model->unsetAttributes();  // clear any default values
+        if(isset($_GET['Role']))
+            $model->attributes=$_GET['Role'];
+
+        $this->render('admin',array(
+            'model'=>$model,
+        ));
+    }
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.

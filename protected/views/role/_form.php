@@ -20,9 +20,15 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'role'); ?>
-		<?php echo $form->textField($model,'role',array('size'=>36,'maxlength'=>36)); ?>
-		<?php echo $form->error($model,'role'); ?>
+		<?php echo $form->labelEx($model,'name'); ?>
+		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>64)); ?>
+		<?php echo $form->error($model,'name'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'type'); ?>
+		<?php echo $form->textField($model,'type'); ?>
+		<?php echo $form->error($model,'type'); ?>
 	</div>
 
 	<div class="row">
@@ -32,15 +38,21 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'identity'); ?>
-		<?php echo $form->textField($model,'identity'); ?>
-		<?php echo $form->error($model,'identity'); ?>
+		<?php echo $form->labelEx($model,'description'); ?>
+		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'description'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'power'); ?>
-		<?php echo $form->textField($model,'power',array('size'=>36,'maxlength'=>36)); ?>
-		<?php echo $form->error($model,'power'); ?>
+		<?php echo $form->labelEx($model,'bizrule'); ?>
+		<?php echo $form->textArea($model,'bizrule',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'bizrule'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'data'); ?>
+		<?php echo $form->textArea($model,'data',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'data'); ?>
 	</div>
 
 	<div class="row buttons">
