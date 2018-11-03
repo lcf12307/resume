@@ -32,6 +32,11 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->label($model,'class'); ?>
+		<?php echo $form->textField($model,'class'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->label($model,'birthday'); ?>
 		<?php echo $form->textField($model,'birthday'); ?>
 	</div>
@@ -44,6 +49,11 @@
 	<div class="row">
 		<?php echo $form->label($model,'pid'); ?>
 		<?php echo $form->textField($model,'pid'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'tid'); ?>
+		<?php echo $form->textField($model,'tid'); ?>
 	</div>
 
 	<div class="row">

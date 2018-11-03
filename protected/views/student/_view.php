@@ -21,6 +21,10 @@
 	<?php echo CHtml::encode($data->phone); ?>
 	<br />
 
+	<b><?php echo CHtml::encode($data->getAttributeLabel('class')); ?>:</b>
+	<?php echo CHtml::encode($data->class); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('birthday')); ?>:</b>
 	<?php echo CHtml::encode($data->birthday); ?>
 	<br />
@@ -29,11 +33,15 @@
 	<?php echo CHtml::encode($data->sex); ?>
 	<br />
 
+	<?php /*
 	<b><?php echo CHtml::encode($data->getAttributeLabel('pid')); ?>:</b>
 	<?php echo CHtml::encode($data->pid); ?>
 	<br />
 
-	<?php /*
+	<b><?php echo CHtml::encode($data->getAttributeLabel('tid')); ?>:</b>
+	<?php echo CHtml::encode($data->tid); ?>
+	<br />
+
 	<b><?php echo CHtml::encode($data->getAttributeLabel('question')); ?>:</b>
 	<?php echo CHtml::encode($data->question); ?>
 	<br />

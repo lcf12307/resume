@@ -17,8 +17,13 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'role'); ?>
-		<?php echo $form->textField($model,'role',array('size'=>36,'maxlength'=>36)); ?>
+		<?php echo $form->label($model,'name'); ?>
+		<?php echo $form->textField($model,'name',array('size'=>60,'maxlength'=>64)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'type'); ?>
+		<?php echo $form->textField($model,'type'); ?>
 	</div>
 
 	<div class="row">
@@ -27,13 +32,18 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'identity'); ?>
-		<?php echo $form->textField($model,'identity'); ?>
+		<?php echo $form->label($model,'description'); ?>
+		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'power'); ?>
-		<?php echo $form->textField($model,'power',array('size'=>36,'maxlength'=>36)); ?>
+		<?php echo $form->label($model,'bizrule'); ?>
+		<?php echo $form->textArea($model,'bizrule',array('rows'=>6, 'cols'=>50)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'data'); ?>
+		<?php echo $form->textArea($model,'data',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
 	<div class="row buttons">

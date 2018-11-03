@@ -15,7 +15,7 @@ IF
 	EXISTS `common_user`;
 CREATE TABLE `common_user` (
 	`id` INT ( 12 ) NOT NULL auto_increment,
-	`openid` VARCHAR ( 120 ) NOT NULL DEFAULT '',
+	`openid` VARCHAR ( 100 ) NOT NULL DEFAULT '' COMMENT '微信标识',
 	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '姓名',
 	`icon` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '头像',
 	`phone` BIGINT ( 12 ) NOT NULL DEFAULT 0 COMMENT '手机号',
@@ -23,6 +23,7 @@ CREATE TABLE `common_user` (
 	`rid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '角色id',
 	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
 	`status` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '状态',
+	`type` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '类型',
 	PRIMARY KEY ( `id` ),
 	UNIQUE KEY `id` ( `id` )
 ) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '用户表';
@@ -34,10 +35,11 @@ CREATE TABLE `common_student` (
 	`name` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '姓名',
 	`icon` VARCHAR ( 36 ) NOT NULL DEFAULT '' COMMENT '头像',
 	`phone` BIGINT ( 12 ) NOT NULL DEFAULT 0 COMMENT '手机号',
-	`grad` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '年级',
+	`class` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '年级',
 	`birthday` INT ( 8 ) NOT NULL DEFAULT 0 COMMENT '生日',
 	`sex` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '性别',
 	`pid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '父亲id',
+	`tid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '老师id',
 	`question` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '问题数',
 	`answer` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '答案数',
 	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
@@ -74,8 +76,6 @@ CREATE TABLE `common_question` (
 	`question` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目',
 	`detail` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目详情',
 	`uid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '用户',
-	`sid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '学生id',
-	`grad` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '年级',
 	`star` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '收藏数',
 	`answer` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '答案数',
 	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
@@ -83,21 +83,6 @@ CREATE TABLE `common_question` (
 	PRIMARY KEY ( `id` ),
 	UNIQUE KEY `id` ( `id` )
 ) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '题目表';
-
-CREATE TABLE `common_report` (
-	`id` INT ( 12 ) NOT NULL auto_increment,
-	`title` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目',
-	`description` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目简介',
-	`detail` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '题目详情',
-	`score` VARCHAR ( 50 ) NOT NULL DEFAULT '' COMMENT '评分',
-	`judge` VARCHAR ( 500 ) NOT NULL DEFAULT '' COMMENT '教师评价',
-	`stage` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '时间段',
-	`uid` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '用户',
-	`addtime` INT ( 12 ) NOT NULL DEFAULT 0 COMMENT '添加时间',
-	`type` TINYINT ( 4 ) NOT NULL DEFAULT 0 COMMENT '分类 0是家长版 1是教师版',
-	PRIMARY KEY ( `id` ),
-	UNIQUE KEY `id` ( `id` )
-) ENGINE = INNODB DEFAULT CHARSET = utf8 COMMENT = '报告表';
 
 DROP TABLE
 IF

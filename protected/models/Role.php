@@ -5,10 +5,17 @@
  *
  * The followings are the available columns in table 'common_role':
  * @property integer $id
- * @property string $role
+ * @property string $name
+ * @property integer $type
  * @property integer $did
- * @property integer $identity
- * @property string $power
+ * @property string $description
+ * @property string $bizrule
+ * @property string $data
+ *
+ * The followings are the available model relations:
+ * @property AuthAssignments[] $authAssignments
+ * @property AuthChildren[] $authChildrens
+ * @property AuthChildren[] $authChildrens1
  */
 class Role extends CActiveRecord
 {
@@ -28,11 +35,13 @@ class Role extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('did, identity', 'numerical', 'integerOnly'=>true),
-			array('role, power', 'length', 'max'=>36),
+			array('name, type', 'required'),
+			array('type, did', 'numerical', 'integerOnly'=>true),
+			array('name', 'length', 'max'=>64),
+			array('description, bizrule, data', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, role, did, identity, power', 'safe', 'on'=>'search'),
+			array('id, name, type, did, description, bizrule, data', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,6 +53,9 @@ class Role extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			'authAssignments' => array(self::HAS_MANY, 'AuthAssignments', 'itemname'),
+			'authChildrens' => array(self::HAS_MANY, 'AuthChildren', 'parent'),
+			'authChildrens1' => array(self::HAS_MANY, 'AuthChildren', 'child'),
 		);
 	}
 
@@ -54,10 +66,12 @@ class Role extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'role' => '角色',
-			'did' => '角色id',
-			'identity' => '身份',
-			'power' => '权限',
+			'name' => 'Name',
+			'type' => 'Type',
+			'did' => 'Did',
+			'description' => 'Description',
+			'bizrule' => 'Bizrule',
+			'data' => 'Data',
 		);
 	}
 
@@ -80,10 +94,12 @@ class Role extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('role',$this->role,true);
+		$criteria->compare('name',$this->name,true);
+		$criteria->compare('type',$this->type);
 		$criteria->compare('did',$this->did);
-		$criteria->compare('identity',$this->identity);
-		$criteria->compare('power',$this->power,true);
+		$criteria->compare('description',$this->description,true);
+		$criteria->compare('bizrule',$this->bizrule,true);
+		$criteria->compare('data',$this->data,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

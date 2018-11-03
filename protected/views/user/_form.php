@@ -61,7 +61,7 @@
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
-	<div class="row hidden">
+	<div class="row">
 		<?php echo $form->labelEx($model,'type'); ?>
 		<?php echo $form->textField($model,'type'); ?>
 		<?php echo $form->error($model,'type'); ?>

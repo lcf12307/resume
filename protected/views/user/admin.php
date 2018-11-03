@@ -2,18 +2,19 @@
 /* @var $this UserController */
 /* @var $model User */
 
-$this->breadcrumbs=array(
-	'Users'=>array('index'),
-	'Manage',
-);
+
 $types = array(
         0 => 'admin',
         1 => 'teacher',
         2 => 'student'
 );
+$this->breadcrumbs=array(
+    'Users'=>array('index'),
+    $types[$model->type] => array($types[$model->type]),
+);
 $this->menu=array(
-	array('label'=>'List User', 'url'=>array($types[$model->type])),
-	array('label'=>'Create User', 'url'=>array('create?type='. $model->type)),
+	array('label'=>'List ' .$types[$model->type]. ' User', 'url'=>array($types[$model->type])),
+	array('label'=>'Create ' .$types[$model->type]. ' User', 'url'=>array('create?type='. $model->type)),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -30,19 +31,18 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Users</h1>
+<h1>Manage <?php echo $types[$model->type];?> Users</h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
 or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
 </p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
 )); ?>
-</div><!-- search-form -->
+</div>
 
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'user-grid',

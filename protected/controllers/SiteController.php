@@ -106,4 +106,35 @@ class SiteController extends Controller
 		Yii::app()->user->logout();
 		$this->redirect(Yii::app()->homeUrl);
 	}
+
+    /**
+     * 上传模块
+     */
+    public function actionUpload(){
+
+        $util = new Util();
+        if (!empty($_POST)){
+            try{
+                //上传成功
+                Yii::app()->file->upload();
+                $filename =  Yii::app()->file->getNameWithExtension();
+                $result = array(
+                    'code' => 0,
+                    'msg' => '上传成功'
+                );
+            }catch (CException $e){
+                $result = Yii::app()->file->getError();
+                $msg = $result[0];
+                $result = array(
+                    'code' => -10001,
+                    'msg' => $msg
+                );
+                //errors错误信息数组
+            }
+            Yii::app()->user->setflash('result', $result);
+            $this->refresh();
+        }
+        $this->render('upload',array());
+    }
+
 }

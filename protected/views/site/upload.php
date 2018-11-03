@@ -45,8 +45,6 @@ if (Yii::app()->user->hasFlash('result')){
         <?php echo CHtml::fileField('file');?>
     </div>
     <div class="row">
-        <div class="col-md-1"><?php echo CHtml::label('请选择账号所属网站：', true);?></div>
-        <div class="col-md-1"><?php echo CHtml::dropDownList( 'sites', $selected, $sites );?></div>
     </div>
     <div class="row">
         <?php

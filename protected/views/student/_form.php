@@ -38,6 +38,12 @@
 	</div>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'class'); ?>
+		<?php echo $form->textField($model,'class'); ?>
+		<?php echo $form->error($model,'class'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'birthday'); ?>
 		<?php echo $form->textField($model,'birthday'); ?>
 		<?php echo $form->error($model,'birthday'); ?>
@@ -53,6 +59,12 @@
 		<?php echo $form->labelEx($model,'pid'); ?>
 		<?php echo $form->textField($model,'pid'); ?>
 		<?php echo $form->error($model,'pid'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'tid'); ?>
+		<?php echo $form->textField($model,'tid'); ?>
+		<?php echo $form->error($model,'tid'); ?>
 	</div>
 
 	<div class="row">

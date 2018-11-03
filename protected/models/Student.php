@@ -8,9 +8,11 @@
  * @property string $name
  * @property string $icon
  * @property string $phone
+ * @property integer $class
  * @property integer $birthday
  * @property integer $sex
  * @property integer $pid
+ * @property integer $tid
  * @property integer $question
  * @property integer $answer
  * @property integer $addtime
@@ -34,12 +36,12 @@ class Student extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('birthday, sex, pid, question, answer, addtime, status', 'numerical', 'integerOnly'=>true),
+			array('class, birthday, sex, pid, tid, question, answer, addtime, status', 'numerical', 'integerOnly'=>true),
 			array('name, icon', 'length', 'max'=>36),
 			array('phone', 'length', 'max'=>12),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, icon, phone, birthday, sex, pid, question, answer, addtime, status', 'safe', 'on'=>'search'),
+			array('id, name, icon, phone, class, birthday, sex, pid, tid, question, answer, addtime, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,9 +66,11 @@ class Student extends CActiveRecord
 			'name' => 'Name',
 			'icon' => 'Icon',
 			'phone' => 'Phone',
+			'class' => 'Class',
 			'birthday' => 'Birthday',
 			'sex' => 'Sex',
 			'pid' => 'Pid',
+			'tid' => 'Tid',
 			'question' => 'Question',
 			'answer' => 'Answer',
 			'addtime' => 'Addtime',
@@ -96,9 +100,11 @@ class Student extends CActiveRecord
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('icon',$this->icon,true);
 		$criteria->compare('phone',$this->phone,true);
+		$criteria->compare('class',$this->class);
 		$criteria->compare('birthday',$this->birthday);
 		$criteria->compare('sex',$this->sex);
 		$criteria->compare('pid',$this->pid);
+		$criteria->compare('tid',$this->tid);
 		$criteria->compare('question',$this->question);
 		$criteria->compare('answer',$this->answer);
 		$criteria->compare('addtime',$this->addtime);
