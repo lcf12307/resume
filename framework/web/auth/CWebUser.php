@@ -330,6 +330,18 @@ class CWebUser extends CApplicationComponent implements IWebUser
 		$this->setState('__name',$value);
 	}
 
+    public function setRole($role){
+        $this->setState('__role', $role);
+    }
+    public function getRole(){
+        return $this->getState('__role');
+    }
+    public function setDivision($division){
+        $this->setState('__division', $division);
+    }
+    public function getDivision(){
+        return $this->getState('__division');
+    }
 	/**
 	 * Returns the URL that the user should be redirected to after successful login.
 	 * This property is usually used by the login action. If the login is successful,

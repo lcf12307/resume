@@ -2,14 +2,21 @@
 /* @var $this RoleController */
 /* @var $model Role */
 
+
+
+
+$types = array(
+    2 => 'Role',
+    3 => 'Division'
+);
+
 $this->breadcrumbs=array(
-	'Roles'=>array('index'),
-	'Manage',
+	$types[$model->type]
 );
 
 $this->menu=array(
-	array('label'=>'List Role', 'url'=>array('index')),
-	array('label'=>'Create Role', 'url'=>array('create')),
+	array('label'=>'List' .$types[$model->type], 'url'=>array('role/' . $types[$model->type])),
+	array('label'=>'Create' .$types[$model->type], 'url'=>array('create?type=' . $model->type)),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -26,7 +33,7 @@ $('.search-form form').submit(function(){
 ");
 ?>
 
-<h1>Manage Roles</h1>
+<h1>Manage <?php echo $types[$model->type];?></h1>
 
 <p>
 You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
@@ -47,8 +54,8 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'columns'=>array(
 		'id',
 		'name',
-		'type',
-		'did',
+//		'type',
+//		'did',
 		'description',
 		'bizrule',
 		/*

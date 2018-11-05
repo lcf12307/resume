@@ -65,9 +65,18 @@ class UserController extends Controller
 
 		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['User'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+		    $role = new Model('role');
+		    $role = $role->selectOne('*', array(
+		        'id' => $_POST['User']['rid'],
+                'type' => 2,
+                'did' => Yii::app()->user->getDivision()
+            ));
+		    if (!empty($role) || Yii::app()->user->getDivision() == 0){
+
+                $model->attributes=$_POST['User'];
+                if($model->save())
+                    $this->redirect(array('view','id'=>$model->id));
+            }
 		}
         $model->type = isset($_GET['type'])?$_GET['type']:0;
 		$this->render('create',array(
@@ -131,6 +140,10 @@ class UserController extends Controller
 		$model=new User('search');
 		$model->unsetAttributes();  // clear any default values
         $_GET['User']['type'] = 0;
+        $did = Yii::app()->user->getDivision();
+        if ($did){
+            $_GET['Role']['did'] = $did;
+        }
 		if(isset($_GET['User']))
 			$model->attributes=$_GET['User'];
 		$this->render('admin',array(
@@ -147,6 +160,10 @@ class UserController extends Controller
         $model=new User('search');
         $model->unsetAttributes();
         $_GET['User']['type'] = 1;
+        $did = Yii::app()->user->getDivision();
+        if ($did){
+            $_GET['Role']['did'] = $did;
+        }
         if(isset($_GET['User']))
             $model->attributes=$_GET['User'];
 
@@ -160,6 +177,10 @@ class UserController extends Controller
         $model=new User('search');
         $model->unsetAttributes();
         $_GET['User']['type'] = 2;
+        $did = Yii::app()->user->getDivision();
+        if ($did){
+            $_GET['Role']['did'] = $did;
+        }
         if(isset($_GET['User']))
             $model->attributes=$_GET['User'];
 

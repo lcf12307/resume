@@ -5,14 +5,17 @@
  *
  * The followings are the available columns in table 'common_user':
  * @property integer $id
+ * @property string $openid
  * @property string $name
  * @property string $icon
+ * @property string $grade
  * @property string $phone
  * @property string $password
  * @property integer $rid
  * @property integer $addtime
  * @property integer $status
  * @property integer $type
+ * @property integer $did
  */
 class User extends CActiveRecord
 {
@@ -32,12 +35,13 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('rid, addtime, status, type', 'numerical', 'integerOnly'=>true),
-			array('name, icon, password', 'length', 'max'=>36),
+			array('rid, addtime, status, type, did', 'numerical', 'integerOnly'=>true),
+			array('openid', 'length', 'max'=>120),
+			array('name, icon, grade, password', 'length', 'max'=>36),
 			array('phone', 'length', 'max'=>12),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, icon, phone, password, rid, addtime, status, type', 'safe', 'on'=>'search'),
+			array('id, openid, name, icon, grade, phone, password, rid, addtime, status, type, did', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -59,14 +63,17 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
+			'openid' => 'Openid',
 			'name' => 'Name',
 			'icon' => 'Icon',
+			'grade' => 'Grade',
 			'phone' => 'Phone',
 			'password' => 'Password',
-			'rid' => 'Rid',
+//			'rid' => 'Rid',
 			'addtime' => 'Addtime',
 			'status' => 'Status',
 			'type' => 'Type',
+			'did' => 'Did',
 		);
 	}
 
@@ -89,14 +96,17 @@ class User extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+		$criteria->compare('openid',$this->openid,true);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('icon',$this->icon,true);
+		$criteria->compare('grade',$this->grade,true);
 		$criteria->compare('phone',$this->phone,true);
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('rid',$this->rid);
 		$criteria->compare('addtime',$this->addtime);
 		$criteria->compare('status',$this->status);
 		$criteria->compare('type',$this->type);
+		$criteria->compare('did',$this->did);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -38,10 +38,6 @@ class CUserIdentity extends CBaseUserIdentity
 	 * @var string password
 	 */
 	public $password;
-    /**
-     * @var string password
-     */
-    public $role;
 
 	/**
 	 * Constructor.

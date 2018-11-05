@@ -32,18 +32,13 @@ class UserIdentity extends CUserIdentity
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
         } else {
 	        $this->errorCode=self::ERROR_NONE;
-	        $roots = array(
-	            6
-            );
-	        if ($result['id'] == 1){
-	            $this->role=0;
-            } elseif (in_array($result['id'], $roots)){
-	            $this->role = 1;
-            } else {
-	            $this->role = 2;
-            }
-            $this->id = $result['id'];
-	        $this->name = $result['name'];
+	        $role = $model->selectOne('*', array(
+	            'id' => $result['rid']
+            ));
+	        Yii::app()->user->setDivision(empty($role['did'])?0:$role['did']);
+	        Yii::app()->user->setRole($result['rid']);
+            $this->userid = $result['id'];
+	        $this->username = $result['name'];
         }
 
 		return !$this->errorCode;

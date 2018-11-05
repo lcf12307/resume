@@ -28,7 +28,7 @@ class RoleController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'role', 'division'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -73,7 +73,8 @@ class RoleController extends Controller
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-
+        $model->type = isset($_GET['type'])?$_GET['type']:0;
+		$model->did = $_GET['type'] == 2?Yii::app()->user->getDivision():0;
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -135,6 +136,11 @@ class RoleController extends Controller
 	{
 		$model=new Role('search');
 		$model->unsetAttributes();  // clear any default values
+        $_GET['Role']['type'] = 2;
+        $did = Yii::app()->user->getDivision();
+        if ($did){
+            $_GET['Role']['did'] = $did;
+        }
 		if(isset($_GET['Role']))
 			$model->attributes=$_GET['Role'];
 
@@ -150,6 +156,7 @@ class RoleController extends Controller
     {
         $model=new Role('search');
         $model->unsetAttributes();  // clear any default values
+        $_GET['Role']['type'] = 3;
         if(isset($_GET['Role']))
             $model->attributes=$_GET['Role'];
 

@@ -41,7 +41,7 @@ class Role extends CActiveRecord
 			array('description, bizrule, data', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, type, did, description, bizrule, data', 'safe', 'on'=>'search'),
+			array('id, name, description, bizrule, data', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -67,8 +67,8 @@ class Role extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
-			'type' => 'Type',
-			'did' => 'Did',
+//			'type' => 'Type',
+//			'did' => 'Did',
 			'description' => 'Description',
 			'bizrule' => 'Bizrule',
 			'data' => 'Data',
