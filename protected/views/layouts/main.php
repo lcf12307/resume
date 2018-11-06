@@ -51,7 +51,7 @@
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">后台管理 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li><a href=<?php echo Yii::app()->homeUrl . "/role"?>>角色管理</a></li>
-                                <li><a href=<?php echo Yii::app()->homeUrl . "/division"?>>部门管理</li>
+                                <li><a href=<?php echo Yii::app()->homeUrl . "/role/division"?>>部门管理</li>
                                 <li><a href=<?php echo Yii::app()->homeUrl . "/user/admin"?>>用户管理</a></li>
                             </ul>
                         </li>

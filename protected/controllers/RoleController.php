@@ -69,6 +69,8 @@ class RoleController extends Controller
 
 		if(isset($_POST['Role']))
 		{
+		    $_POST['type'] = isset($_GET['type'])?$_GET['type']:0;
+		    $_POST['did'] = $_GET['type'] == 2?Yii::app()->user->getDivision():0;
 			$model->attributes=$_POST['Role'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));

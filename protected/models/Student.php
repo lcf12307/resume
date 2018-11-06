@@ -96,20 +96,23 @@ class Student extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('icon',$this->icon,true);
-		$criteria->compare('phone',$this->phone,true);
-		$criteria->compare('class',$this->class);
-		$criteria->compare('birthday',$this->birthday);
-		$criteria->compare('sex',$this->sex);
-		$criteria->compare('pid',$this->pid);
-		$criteria->compare('tid',$this->tid);
-		$criteria->compare('question',$this->question);
-		$criteria->compare('answer',$this->answer);
-		$criteria->compare('addtime',$this->addtime);
-		$criteria->compare('status',$this->status);
-
+		$criteria->compare('t.id',$this->id);
+		$criteria->compare('t.name',$this->name,true);
+		$criteria->compare('t.icon',$this->icon,true);
+		$criteria->compare('t.phone',$this->phone,true);
+		$criteria->compare('t.class',$this->class);
+		$criteria->compare('t.birthday',$this->birthday);
+		$criteria->compare('t.sex',$this->sex);
+		$criteria->compare('t.pid',$this->pid);
+		$criteria->compare('t.tid',$this->tid);
+		$criteria->compare('t.question',$this->question);
+		$criteria->compare('t.answer',$this->answer);
+		$criteria->compare('t.addtime',$this->addtime);
+		$criteria->compare('t.status',$this->status);
+        if (Yii::app()->user->getDivision()){
+            $criteria->compare('common_role.did',Yii::app()->user->getDivision());
+        }
+        $criteria->join = 'LEFT JOIN common_user ON common_user.id=t.tid LEFT JOIN common_role ON common_role.id = common_user.rid';
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

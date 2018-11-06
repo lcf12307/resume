@@ -396,7 +396,6 @@ class CGridView extends CBaseListView
 				$column->id=$id.'_c'.$i;
 			$this->columns[$i]=$column;
 		}
-
 		foreach($this->columns as $column)
 			$column->init();
 	}

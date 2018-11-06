@@ -177,10 +177,6 @@ class UserController extends Controller
         $model=new User('search');
         $model->unsetAttributes();
         $_GET['User']['type'] = 2;
-        $did = Yii::app()->user->getDivision();
-        if ($did){
-            $_GET['Role']['did'] = $did;
-        }
         if(isset($_GET['User']))
             $model->attributes=$_GET['User'];
 
