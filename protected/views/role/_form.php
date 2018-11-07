@@ -43,7 +43,16 @@
 		<?php echo $form->textArea($model,'data',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'data'); ?>
 	</div>
-
+    <div class="row" hidden>
+        <?php echo $form->labelEx($model,'type'); ?>
+        <?php echo $form->textField($model,'type'); ?>
+        <?php echo $form->error($model,'type'); ?>
+    </div>
+    <div class="row" <?php if ( Yii::app()->user->getDivision() != Yii::app()->params['adminDivision']) echo "hidden";?>>
+        <?php echo $form->labelEx($model,'type'); ?>
+        <?php echo $form->textField($model,'type'); ?>
+        <?php echo $form->error($model,'type'); ?>
+    </div>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>

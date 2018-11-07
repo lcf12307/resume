@@ -69,14 +69,15 @@ class RoleController extends Controller
 
 		if(isset($_POST['Role']))
 		{
-		    $_POST['type'] = 2;
-		    $_POST['did'] = Yii::app()->user->getDivision();
+		    if ( Yii::app()->user->getDivision() != Yii::app()->params['adminDivision']){
+
+                $_POST['Role']['did'] = Yii::app()->user->getDivision();
+            }
 			$model->attributes=$_POST['Role'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
-        $model->type = isset($_GET['type'])?$_GET['type']:0;
-		$model->did = $_GET['type'] == 2?Yii::app()->user->getDivision(): Yii::app()->params['adminDivision'];
+        $model->type = isset($_GET['type'])?$_GET['type']:2;
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -97,13 +98,12 @@ class RoleController extends Controller
 		if(isset($_POST['Role']) && ($model['did'] == Yii::app()->user->getDivision() || Yii::app()->user->getDivision() == Yii::app()->params['adminDivision']))
 		{
 
-            $_POST['type'] = 2;
             $_POST['did'] = Yii::app()->user->getDivision();
             $model->attributes=$_POST['Role'];
             if($model->save())
                 $this->redirect(array('view','id'=>$model->id));
 		}
-
+        $model->type = isset($_GET['type'])?$_GET['type']:0;
 		$this->render('update',array(
 			'model'=>$model,
 		));
