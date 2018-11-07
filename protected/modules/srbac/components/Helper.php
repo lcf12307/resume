@@ -277,14 +277,14 @@ class Helper {
                                      bizrule text,
                                      data text,
                                      unique key (name),
-                                     primary key (id));";
+                                     primary key (id)) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 comment '角色表';";
       $db->createCommand($sql)->execute();
       $sql = "create table " . $itemChildTable . " (parent varchar(64) not null,
                                               child varchar(64) not null,
                                               primary key (parent,child),
                                               foreign key (parent) references " . $itemTable . " (name) on delete cascade on update cascade,
                                               foreign key (child) references " . $itemTable . " (name) on delete cascade on update cascade
-                                              );";
+                                              ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 comment '权限表';";
       $db->createCommand($sql)->execute();
       $sql = "create table " . $assignmentTable . "(itemname varchar(64) not null,
                                                 userid varchar(64) not null,
@@ -292,7 +292,7 @@ class Helper {
                                                 data text,
                                                 primary key (itemname,userid),
                                                 foreign key (itemname) references " . $itemTable . " (name) on delete cascade on update cascade
-                                              );";
+                                              )  ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8 comment '分配表';";
       $db->createCommand($sql)->execute();
       //Insert Authorizer
       $sql = "INSERT INTO " . $itemTable . " (name, type) VALUES ('" . self::findModule('srbac')->superUser . "',2)";
