@@ -116,6 +116,7 @@ return array(
 
 	'params'=>array(
 		// this is used in contact page
+        'adminDivision' => '14',
 		'adminEmail'=>'lcf12307@qq.com',
         'uploadPath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'../../upload/',
 	),

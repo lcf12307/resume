@@ -71,7 +71,7 @@ class UserController extends Controller
                 'type' => 2,
                 'did' => Yii::app()->user->getDivision()
             ));
-		    if (!empty($role) || Yii::app()->user->getDivision() == 0){
+		    if (!empty($role) || Yii::app()->user->getDivision() == Yii::app()->params['adminDivision']){
 
                 $model->attributes=$_POST['User'];
                 if($model->save())
@@ -97,9 +97,19 @@ class UserController extends Controller
 
 		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['User'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+            $role = new Model('role');
+            $role = $role->selectOne('*', array(
+                'id' => $_POST['User']['rid'],
+                'type' => 2,
+                'did' => Yii::app()->user->getDivision()
+            ));
+            if (!empty($role) || Yii::app()->user->getDivision() == Yii::app()->params['adminDivision']){
+
+                $model->attributes=$_POST['User'];
+                if($model->save())
+                    $this->redirect(array('view','id'=>$model->id));
+
+            }
 		}
 
 		$this->render('update',array(

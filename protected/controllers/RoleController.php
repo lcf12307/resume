@@ -69,14 +69,14 @@ class RoleController extends Controller
 
 		if(isset($_POST['Role']))
 		{
-		    $_POST['type'] = isset($_GET['type'])?$_GET['type']:0;
-		    $_POST['did'] = $_GET['type'] == 2?Yii::app()->user->getDivision():0;
+		    $_POST['type'] = 2;
+		    $_POST['did'] = Yii::app()->user->getDivision();
 			$model->attributes=$_POST['Role'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
         $model->type = isset($_GET['type'])?$_GET['type']:0;
-		$model->did = $_GET['type'] == 2?Yii::app()->user->getDivision():0;
+		$model->did = $_GET['type'] == 2?Yii::app()->user->getDivision(): Yii::app()->params['adminDivision'];
 		$this->render('create',array(
 			'model'=>$model,
 		));
@@ -94,11 +94,14 @@ class RoleController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Role']))
+		if(isset($_POST['Role']) && ($model['did'] == Yii::app()->user->getDivision() || Yii::app()->user->getDivision() == Yii::app()->params['adminDivision']))
 		{
-			$model->attributes=$_POST['Role'];
-			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+
+            $_POST['type'] = 2;
+            $_POST['did'] = Yii::app()->user->getDivision();
+            $model->attributes=$_POST['Role'];
+            if($model->save())
+                $this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(
@@ -113,23 +116,26 @@ class RoleController extends Controller
 	 */
 	public function actionDelete($id)
 	{
-		$this->loadModel($id)->delete();
+		$model = $this->loadModel($id);
+		if  ($model['did'] == Yii::app()->user->getDivision() || Yii::app()->user->getDivision() == Yii::app()->params['adminDivision']){
+		    $model->delete();
+        }
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 	}
 
-	/**
-	 * Lists all models.
-	 */
-	public function actionIndex()
-	{
-		$dataProvider=new CActiveDataProvider('Role');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-		));
-	}
+//	/**
+//	 * Lists all models.
+//	 */
+//	public function actionIndex()
+//	{
+//		$dataProvider=new CActiveDataProvider('Role');
+//		$this->render('index',array(
+//			'dataProvider'=>$dataProvider,
+//		));
+//	}
 
 	/**
 	 * Manages all models.
