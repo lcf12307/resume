@@ -6,8 +6,8 @@
 
 
 $types = array(
-    2 => 'Role',
-    3 => 'Division'
+    2 => 'role',
+    3 => 'division'
 );
 
 $this->breadcrumbs=array(
@@ -15,32 +15,19 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List' .$types[$model->type], 'url'=>array('role/' . $types[$model->type])),
-	array('label'=>'Create' .$types[$model->type], 'url'=>array('create?type=' . $model->type)),
+	array('label'=> Translation::translate($types[$model->type]) . '列表', 'url'=>array('role/' . $types[$model->type])),
+	array('label'=>'创建' .Translation::translate($types[$model->type]), 'url'=>array('create?type=' . $model->type)),
 );
 
-Yii::app()->clientScript->registerScript('search', "
-$('.search-button').click(function(){
-	$('.search-form').toggle();
-	return false;
-});
-$('.search-form form').submit(function(){
-	$('#role-grid').yiiGridView('update', {
-		data: $(this).serialize()
-	});
-	return false;
-});
-");
 ?>
 
-<h1>Manage <?php echo $types[$model->type];?></h1>
+<h1><?php echo Translation::translate($types[$model->type]);?> 管理</h1>
 
 <p>
-You may optionally enter a comparison operator (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
-or <b>=</b>) at the beginning of each of your search values to specify how the comparison should be done.
+    你可以输入以下的这些运算符 (<b>&lt;</b>, <b>&lt;=</b>, <b>&gt;</b>, <b>&gt;=</b>, <b>&lt;&gt;</b>
+    or <b>=</b>) 在对应的搜索框里，即可搜索出正确答案.
 </p>
 
-<?php echo CHtml::link('Advanced Search','#',array('class'=>'search-button')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

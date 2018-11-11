@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Repository', 'url'=>array('index')),
-	array('label'=>'Manage Repository', 'url'=>array('admin')),
+	array('label'=>'知识库列表', 'url'=>array('index')),
+	array('label'=>'知识库管理', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Repository</h1>
+<h1>创建知识库</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

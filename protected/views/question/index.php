@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Question', 'url'=>array('create')),
-	array('label'=>'Manage Question', 'url'=>array('admin')),
+	array('label'=>'创建问题', 'url'=>array('create')),
+	array('label'=>'管理问题', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Questions</h1>
+<h1>问题列表</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,

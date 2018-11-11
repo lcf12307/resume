@@ -8,11 +8,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Answer', 'url'=>array('index')),
-	array('label'=>'Manage Answer', 'url'=>array('admin')),
+	array('label'=>'答案列表', 'url'=>array('index')),
+	array('label'=>'答案管理', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Create Answer</h1>
+<h1>新建答案</h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

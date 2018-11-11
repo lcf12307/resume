@@ -4,8 +4,8 @@
 
 
 $types = array(
-    2 => 'Role',
-    3 => 'Division'
+    2 => 'role',
+    3 => 'division'
 );
 
 $this->breadcrumbs=array(
@@ -15,11 +15,11 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-    array('label'=>'List' .$types[$model->type], 'url'=>array('role/' . $types[$model->type])),
-    array('label' => $types[$model->type], 'url' =>  array('/role/' . $types[$model->type]))
+    array('label'=>Translation::translate($types[$model->type]) . '列表', 'url'=>array('role/' . $types[$model->type])),
+    array('label' => '创建' . Translation::translate($types[$model->type]), 'url' =>  array('/role/' . $types[$model->type]))
 );
 ?>
 
-<h1>Create  <?php echo $types[$model->type];?></h1>
+<h1>新建  <?php echo Translation::translate($types[$model->type]);?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

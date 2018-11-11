@@ -7,12 +7,12 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'Create Repository', 'url'=>array('create')),
-	array('label'=>'Manage Repository', 'url'=>array('admin')),
+	array('label'=>'新建知识库', 'url'=>array('create')),
+	array('label'=>'知识库管理', 'url'=>array('admin')),
 );
 ?>
 
-<h1>Repositories</h1>
+<h1>知识库列表</h1>
 
 <?php $this->widget('zii.widgets.CListView', array(
 	'dataProvider'=>$dataProvider,
