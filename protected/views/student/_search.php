@@ -32,8 +32,8 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'class'); ?>
-		<?php echo $form->textField($model,'class'); ?>
+		<?php echo $form->label($model,'grad'); ?>
+		<?php echo $form->textField($model,'grad'); ?>
 	</div>
 
 	<div class="row">

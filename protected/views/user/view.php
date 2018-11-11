@@ -7,11 +7,10 @@
 $types = array(
     0 => 'admin',
     1 => 'teacher',
-    2 => 'student'
+    2 => 'parent'
 );
 
 $this->breadcrumbs=array(
-	'Users'=>array('index'),
     $types[$model->type] => array($types[$model->type]),
 );
 

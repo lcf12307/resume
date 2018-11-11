@@ -49,19 +49,19 @@
 		<?php echo $form->error($model,'rid'); ?>
 	</div>
 
-	<div class="row hidden">
+	<div class="row" hidden>
 		<?php echo $form->labelEx($model,'addtime'); ?>
 		<?php echo $form->textField($model,'addtime', array('value' => time())); ?>
 		<?php echo $form->error($model,'addtime'); ?>
 	</div>
 
-	<div class="row hidden">
+	<div class="row" hidden>
 		<?php echo $form->labelEx($model,'status'); ?>
 		<?php echo $form->textField($model,'status', array('value' => 1)); ?>
 		<?php echo $form->error($model,'status'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row" hidden>
 		<?php echo $form->labelEx($model,'type'); ?>
 		<?php echo $form->textField($model,'type'); ?>
 		<?php echo $form->error($model,'type'); ?>

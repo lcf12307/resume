@@ -6,9 +6,9 @@
  * The followings are the available columns in table 'common_student':
  * @property integer $id
  * @property string $name
+ * @property string $studentId
  * @property string $icon
  * @property string $phone
- * @property integer $class
  * @property integer $birthday
  * @property integer $sex
  * @property integer $pid
@@ -17,6 +17,7 @@
  * @property integer $answer
  * @property integer $addtime
  * @property integer $status
+ * @property integer $grad
  */
 class Student extends CActiveRecord
 {
@@ -36,12 +37,13 @@ class Student extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('class, birthday, sex, pid, tid, question, answer, addtime, status', 'numerical', 'integerOnly'=>true),
-			array('name, icon', 'length', 'max'=>36),
+			array('birthday, sex, pid, tid, question, answer, addtime, status, grad', 'numerical', 'integerOnly'=>true),
+			array('name, studentId', 'length', 'max'=>36),
+			array('icon', 'length', 'max'=>100),
 			array('phone', 'length', 'max'=>12),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, name, icon, phone, class, birthday, sex, pid, tid, question, answer, addtime, status', 'safe', 'on'=>'search'),
+			array('id, name, studentId, icon, phone, birthday, sex, pid, tid, question, answer, addtime, status, grad', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,9 +66,9 @@ class Student extends CActiveRecord
 		return array(
 			'id' => 'ID',
 			'name' => 'Name',
+			'studentId' => 'Student',
 			'icon' => 'Icon',
 			'phone' => 'Phone',
-			'class' => 'Class',
 			'birthday' => 'Birthday',
 			'sex' => 'Sex',
 			'pid' => 'Pid',
@@ -75,6 +77,7 @@ class Student extends CActiveRecord
 			'answer' => 'Answer',
 			'addtime' => 'Addtime',
 			'status' => 'Status',
+			'grad' => 'Grad',
 		);
 	}
 
@@ -96,23 +99,24 @@ class Student extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('t.id',$this->id);
-		$criteria->compare('t.name',$this->name,true);
-		$criteria->compare('t.icon',$this->icon,true);
-		$criteria->compare('t.phone',$this->phone,true);
-		$criteria->compare('t.class',$this->class);
-		$criteria->compare('t.birthday',$this->birthday);
-		$criteria->compare('t.sex',$this->sex);
-		$criteria->compare('t.pid',$this->pid);
-		$criteria->compare('t.tid',$this->tid);
-		$criteria->compare('t.question',$this->question);
-		$criteria->compare('t.answer',$this->answer);
-		$criteria->compare('t.addtime',$this->addtime);
-		$criteria->compare('t.status',$this->status);
+        $criteria->compare('t.id',$this->id);
+        $criteria->compare('t.name',$this->name,true);
+        $criteria->compare('t.icon',$this->icon,true);
+        $criteria->compare('t.phone',$this->phone,true);
+        $criteria->compare('t.grad',$this->grad);
+        $criteria->compare('t.birthday',$this->birthday);
+        $criteria->compare('t.sex',$this->sex);
+        $criteria->compare('t.pid',$this->pid);
+        $criteria->compare('t.tid',$this->tid);
+        $criteria->compare('t.question',$this->question);
+        $criteria->compare('t.answer',$this->answer);
+        $criteria->compare('t.addtime',$this->addtime);
+        $criteria->compare('t.status',$this->status);
         if (Yii::app()->user->getDivision()){
             $criteria->compare('common_role.did',Yii::app()->user->getDivision());
         }
         $criteria->join = 'LEFT JOIN common_user ON common_user.id=t.tid LEFT JOIN common_role ON common_role.id = common_user.rid';
+
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));

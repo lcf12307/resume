@@ -38,9 +38,9 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'class'); ?>
-		<?php echo $form->textField($model,'class'); ?>
-		<?php echo $form->error($model,'class'); ?>
+		<?php echo $form->labelEx($model,'grad'); ?>
+		<?php echo $form->textField($model,'grad'); ?>
+		<?php echo $form->error($model,'grad'); ?>
 	</div>
 
 	<div class="row">

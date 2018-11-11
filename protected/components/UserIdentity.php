@@ -32,7 +32,8 @@ class UserIdentity extends CUserIdentity
             $this->errorCode=self::ERROR_PASSWORD_INVALID;
         } else {
 	        $this->errorCode=self::ERROR_NONE;
-	        $role = $model->selectOne('*', array(
+	        $roleModel = new Model('role');
+	        $role = $roleModel->selectOne('*', array(
 	            'id' => $result['rid']
             ));
 	        Yii::app()->user->setDivision(empty($role['did'])?0:$role['did']);

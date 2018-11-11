@@ -2,17 +2,22 @@
 /* @var $this RoleController */
 /* @var $model Role */
 
+
+$types = array(
+    2 => 'Role',
+    3 => 'Division'
+);
+
 $this->breadcrumbs=array(
-	'Roles'=>array('index'),
+	'Roles'=>array('/role/' . $types[$model->type]),
 	$model->name=>array('view','id'=>$model->id),
 	'Update',
 );
 
 $this->menu=array(
-	array('label'=>'List Role', 'url'=>array('index')),
-	array('label'=>'Create Role', 'url'=>array('create')),
-	array('label'=>'View Role', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Role', 'url'=>array('admin')),
+	array('label'=>'Create '.$types[$model->type], 'url'=>array('create?type='.empty($model->type)?2:$model->type)),
+	array('label'=>'View '.$types[$model->type], 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Manage '.$types[$model->type], 'url'=>array('admin')),
 );
 ?>
 

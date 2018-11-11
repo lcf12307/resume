@@ -21,8 +21,8 @@
 	<?php echo CHtml::encode($data->phone); ?>
 	<br />
 
-	<b><?php echo CHtml::encode($data->getAttributeLabel('class')); ?>:</b>
-	<?php echo CHtml::encode($data->class); ?>
+	<b><?php echo CHtml::encode($data->getAttributeLabel('grad')); ?>:</b>
+	<?php echo CHtml::encode($data->grad); ?>
 	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('birthday')); ?>:</b>

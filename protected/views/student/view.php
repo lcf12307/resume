@@ -25,7 +25,7 @@ $this->menu=array(
 		'name',
 		'icon',
 		'phone',
-		'class',
+		'grad',
 		'birthday',
 		'sex',
 		'pid',

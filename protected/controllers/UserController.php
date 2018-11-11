@@ -74,6 +74,7 @@ class UserController extends Controller
 		    if (!empty($role) || Yii::app()->user->getDivision() == Yii::app()->params['adminDivision']){
 
                 $model->attributes=$_POST['User'];
+                $model->type = $_POST['User']['type'];
                 if($model->save())
                     $this->redirect(array('view','id'=>$model->id));
             }

@@ -95,7 +95,7 @@ class User extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->select= ' t.id,t.openid,t.name,t.icon, t.grade, t.phone, t.password, t.rid, t.addtime, t.status, t.type, t.did';
+		$criteria->select= ' t.id,t.openid,t.name,t.icon, t.grade, t.phone, t.password, t.rid, t.addtime, t.status, t.type';
 		$criteria->compare('t.id',$this->id);
 		$criteria->compare('t.openid',$this->openid,true);
 		$criteria->compare('t.name',$this->name,true);

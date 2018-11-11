@@ -48,10 +48,10 @@
         <?php echo $form->textField($model,'type'); ?>
         <?php echo $form->error($model,'type'); ?>
     </div>
-    <div class="row" <?php if ( Yii::app()->user->getDivision() != Yii::app()->params['adminDivision']) echo "hidden";?>>
-        <?php echo $form->labelEx($model,'type'); ?>
-        <?php echo $form->textField($model,'type'); ?>
-        <?php echo $form->error($model,'type'); ?>
+    <div class="row" <?php if ( Yii::app()->user->getDivision() != Yii::app()->params['adminDivision']) echo "hidden"; ?>>
+        <?php echo $form->labelEx($model,'did'); ?>
+        <?php echo $form->textField($model,'did'); ?>
+        <?php echo $form->error($model,'did'); ?>
     </div>
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
