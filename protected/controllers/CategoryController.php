@@ -28,8 +28,8 @@ class CategoryController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'question', 'repository','create','update','admin','delete'),
-				'users'=>array('*'),
+				'actions'=>array('index','view', 'question', 'repository','create','update','admin','delete', 'score'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -154,6 +154,19 @@ class CategoryController extends Controller
         $model=new Category('search');
         $model->unsetAttributes();  // clear any default values
         $_GET['Category']['type'] = 1;
+        if(isset($_GET['Category']))
+            $model->attributes=$_GET['Category'];
+
+        $this->render('admin',array(
+            'model'=>$model,
+        ));
+    }
+
+    public function actionScore()
+    {
+        $model=new Category('search');
+        $model->unsetAttributes();  // clear any default values
+        $_GET['Category']['type'] = 2;
         if(isset($_GET['Category']))
             $model->attributes=$_GET['Category'];
 

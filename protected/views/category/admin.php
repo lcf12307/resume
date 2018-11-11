@@ -6,6 +6,7 @@
 $types = array(
     0 => 'question',
     1 => 'repository',
+    2 => 'score',
 );
 $this->breadcrumbs=array(
     'Categories'=>array('index'),
