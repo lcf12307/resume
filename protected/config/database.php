@@ -12,7 +12,7 @@ return array(
 //	'charset' => 'utf8',
 //
 
-	'connectionString' => 'mysql:host=JXSQ-rm-bp1fg2aan1t7v675h.mysql.rds.aliyuncs.com:3306;dbname=jxhd',
+	'connectionString' => 'mysql:host=JXSQ-rm-bp1fg2aan1t7v675h.mysql.rds.aliyuncs.com;dbname=jxhd',
 	'emulatePrepare' => true,
 	'username' => 'root',
 	'password' => 'jxhd_test123',
