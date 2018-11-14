@@ -66,7 +66,7 @@
                             <ul class="dropdown-menu">
                                 <li><a href="<?php echo Yii::app()->homeUrl . "/user/teacher"?>">教师用户管理</a></li>
                                 <li><a href="<?php echo Yii::app()->homeUrl . "/user/parent"?>">家长用户管理</li>
-                                <li><a href="<?php echo Yii::app()->homeUrl . "/student"?>">学生信息管理</a></li>
+                                <li><a href="<?php echo Yii::app()->homeUrl . "/student/admin"?>">学生信息管理</a></li>
                             </ul>
                         </li>
                     </ul>
