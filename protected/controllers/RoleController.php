@@ -146,7 +146,7 @@ class RoleController extends Controller
 		$model->unsetAttributes();  // clear any default values
         $_GET['Role']['type'] = 2;
         $did = Yii::app()->user->getDivision();
-        if ($did){
+        if ($did && $did != Yii::app()->params['adminDivision'] ){
             $_GET['Role']['did'] = $did;
         }
 		if(isset($_GET['Role']))
