@@ -25,9 +25,9 @@
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 
-	<div class="row">
+	<div class="row" hidden>
 		<?php echo $form->labelEx($model,'icon'); ?>
-		<?php echo $form->textField($model,'icon',array('size'=>36,'maxlength'=>36)); ?>
+		<?php echo $form->textField($model,'icon',array('size'=>36,'maxlength'=>36, 'value' => '/img/logo.png')); ?>
 		<?php echo $form->error($model,'icon'); ?>
 	</div>
 
