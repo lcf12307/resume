@@ -2,20 +2,25 @@
 /* @var $this UserController */
 /* @var $model User */
 
+
+$types = array(
+    0 => '管理员',
+    1 => '教师',
+    2 => '家长'
+);
 $this->breadcrumbs=array(
 	'Users'=>array('index'),
-	$model->name=>array('view','id'=>$model->id),
+    $types[$model->type] => array($types[$model->type]),
 	'Update',
 );
 
+
 $this->menu=array(
-	array('label'=>'List User', 'url'=>array('index')),
-	array('label'=>'Create User', 'url'=>array('create')),
-	array('label'=>'View User', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage User', 'url'=>array('admin')),
+    array('label'=>  $types[$model->type]. ' 列表', 'url'=>array($types[$model->type])),
+    array('label'=>'用户详情', 'url'=>array('view', 'id'=>$model->id)),
+    array('label'=>  '创建' . $types[$model->type], 'url'=>array('create?type='. $model->type)),
 );
 ?>
 
-<h1>Update User <?php echo $model->id; ?></h1>
-
+    <h1>修改 <?php echo Translation::translate($types[$model->type]);?></h1>
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>
