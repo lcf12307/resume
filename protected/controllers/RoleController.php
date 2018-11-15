@@ -79,7 +79,21 @@ class RoleController extends Controller
 			    if ($model->type == 3){
 			        $model->type = 2;
 			        $model->did = $id;
-			        $model->save();
+			        if ($model->save()){
+			            $user = new User;
+			            $user->attributes = array(
+			                'name' => $model->name,
+                            'icon' => '/img/logo.png',
+                            'rid' => $model->id,
+                            'addtime' => time(),
+                            'status' => 1,
+                            'type' => 0,
+                            'password' => 123456
+                        );
+			            if ($user->save()){
+			                $this->redirect(array('/user/view', 'id'=> $user->id));
+                        }
+                    }
                 }
 				$this->redirect(array('view','id'=>$model->id));
 		}

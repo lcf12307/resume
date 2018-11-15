@@ -9043,3 +9043,6 @@ Stack trace:
 REQUEST_URI=/index.php/role/create?type=2
 HTTP_REFERER=http://resume.myglife.cn/index.php/role/create?type=2
 ---
+2018/11/15 12:02:34 [warning] [application] Failed to set unsafe attribute "type" of "User".
+in /home/work/data/www/resume/protected/controllers/RoleController.php (84)
+in /home/work/data/www/resume/index.php (13)
