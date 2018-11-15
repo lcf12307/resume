@@ -74,13 +74,13 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">错题管理 <span class="caret"></span></a>
                             <ul class="dropdown-menu">
-                                <li><a href="<?php echo Yii::app()->homeUrl . "/question"?>">题目管理</a></li>
+                                <li><a href="<?php echo Yii::app()->homeUrl . "/question/admin"?>">题目管理</a></li>
                                 <li><a href="<?php echo Yii::app()->homeUrl . "/repository"?>">知识库管理</a></li>
                                 <li><a href="<?php echo Yii::app()->homeUrl . "/answer"?>">答案管理</a></li>
                             </ul>
                         </li>
                     </ul>
-                    <ul class="nav navbar-nav">
+                    <ul class="nav navbar-nav" <?php if ( Yii::app()->user->getDivision() != Yii::app()->params['adminDivision'])  echo "hidden";?>>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">分类管理 <span class="caret"></span></a>
                             <ul class="dropdown-menu">

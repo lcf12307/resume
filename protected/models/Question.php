@@ -90,17 +90,19 @@ class Question extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('id',$this->id);
-		$criteria->compare('cid',$this->cid);
-		$criteria->compare('name',$this->name,true);
-		$criteria->compare('question',$this->question,true);
-		$criteria->compare('detail',$this->detail,true);
-		$criteria->compare('uid',$this->uid);
-		$criteria->compare('star',$this->star);
-		$criteria->compare('answer',$this->answer);
-		$criteria->compare('addtime',$this->addtime);
-		$criteria->compare('status',$this->status);
+        $criteria->select= ' t.id,t.cid,t.name,t.question, t.detail, t.uid, t.star, t.answer, t.addtime, t.status';
+		$criteria->compare('t.id',$this->id);
+		$criteria->compare('t.cid',$this->cid);
+		$criteria->compare('t.name',$this->name,true);
+		$criteria->compare('t.question',$this->question,true);
+		$criteria->compare('t.detail',$this->detail,true);
+		$criteria->compare('t.uid',$this->uid);
+		$criteria->compare('t.star',$this->star);
+		$criteria->compare('t.answer',$this->answer);
+		$criteria->compare('t.addtime',$this->addtime);
+		$criteria->compare('t.status',$this->status);
 
+        $criteria->join = 'LEFT JOIN common_user ON common_user.id=t.uid LEFT JOIN common_role ON common_role.id = common_user.rid';
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
