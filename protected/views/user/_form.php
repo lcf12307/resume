@@ -45,7 +45,13 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'rid'); ?>
-		<?php echo $form->textField($model,'rid'); ?>
+		<?php
+          if ( Yii::app()->user->getDivision() != Yii::app()->params['adminDivision'])    {
+              echo $form->textField($model,'rid', $roles);
+          } else{
+              echo $form->dropDownList($model,'rid', $roles);
+          }
+		?>
 		<?php echo $form->error($model,'rid'); ?>
 	</div>
 

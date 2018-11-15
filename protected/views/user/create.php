@@ -20,4 +20,4 @@ $this->menu=array(
 
 <h1>创建 <?php echo Translation::translate($types[$model->type]);?></h1>
 
-<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php $this->renderPartial('_form', array('model'=>$model, 'roles' => $roles)); ?>

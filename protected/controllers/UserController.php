@@ -63,9 +63,9 @@ class UserController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
+        $role = new Model('role');
 		if(isset($_POST['User']))
 		{
-		    $role = new Model('role');
 		    $role = $role->selectOne('*', array(
 		        'id' => $_POST['User']['rid'],
                 'type' => 2,
@@ -80,8 +80,17 @@ class UserController extends Controller
             }
 		}
         $model->type = isset($_GET['type'])?$_GET['type']:0;
+		$rids = $role->select('id, name', array(
+		    'did' => Yii::app()->user->getDivision(),
+            'type' => 2,
+        ));
+		$roles = array();
+		foreach ($rids as $value){
+		    $roles[$value['id']] = $value['name'];
+        }
 		$this->render('create',array(
 			'model'=>$model,
+            'roles' => $roles
 		));
 	}
 	/**
