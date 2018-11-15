@@ -112,7 +112,7 @@ class Student extends CActiveRecord
         $criteria->compare('t.answer',$this->answer);
         $criteria->compare('t.addtime',$this->addtime);
         $criteria->compare('t.status',$this->status);
-        if (Yii::app()->user->getDivision()){
+        if (Yii::app()->user->getDivision() != Yii::app()->params['adminDivision']){
             $criteria->compare('common_role.did',Yii::app()->user->getDivision());
         }
         $criteria->join = 'LEFT JOIN common_user ON common_user.id=t.tid LEFT JOIN common_role ON common_role.id = common_user.rid';

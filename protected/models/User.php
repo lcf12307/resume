@@ -107,7 +107,7 @@ class User extends CActiveRecord
 		$criteria->compare('t.addtime',$this->addtime);
 		$criteria->compare('t.status',$this->status);
 		$criteria->compare('t.type',$this->type);
-		if (Yii::app()->user->getDivision()){
+		if (Yii::app()->user->getDivision() != Yii::app()->params['adminDivision']){
             $criteria->compare('common_role.did',Yii::app()->user->getDivision());
         }
 		$criteria->join = 'LEFT JOIN common_role ON common_role.id=t.rid';
