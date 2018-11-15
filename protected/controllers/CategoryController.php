@@ -28,7 +28,7 @@ class CategoryController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'question', 'repository','create','update','admin','delete', 'score'),
+				'actions'=>array('index','view', 'question', 'repository','create','update','admin', 'score'),
 				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
