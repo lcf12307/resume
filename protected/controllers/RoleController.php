@@ -75,6 +75,12 @@ class RoleController extends Controller
             }
 			$model->attributes=$_POST['Role'];
 			if($model->save())
+			    $id = $model->id;
+			    if ($model->type == 3){
+			        $model->type = 2;
+			        $model->did = $id;
+			        $model->save();
+                }
 				$this->redirect(array('view','id'=>$model->id));
 		}
         $model->type = isset($_GET['type'])?$_GET['type']:2;
@@ -146,12 +152,11 @@ class RoleController extends Controller
 		$model->unsetAttributes();  // clear any default values
         $_GET['Role']['type'] = 2;
         $did = Yii::app()->user->getDivision();
-        if ($did && $did != Yii::app()->params['adminDivision'] ){
+        if ($did != Yii::app()->params['adminDivision'] ){
             $_GET['Role']['did'] = $did;
         }
 		if(isset($_GET['Role']))
 			$model->attributes=$_GET['Role'];
-
 		$this->render('admin',array(
 			'model'=>$model,
 		));
