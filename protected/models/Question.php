@@ -96,7 +96,7 @@ class Question extends CActiveRecord
 		$criteria->compare('t.name',$this->name,true);
 		$criteria->compare('t.question',$this->question,true);
 		$criteria->compare('t.detail',$this->detail,true);
-		$criteria->compare('t.uid',$this->uid);
+		$criteria->compare('common_user.name',$this->uid);
 		$criteria->compare('t.star',$this->star);
 		$criteria->compare('t.answer',$this->answer);
 		$criteria->compare('t.addtime',$this->addtime);
