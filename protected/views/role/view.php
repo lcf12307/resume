@@ -2,6 +2,12 @@
 /* @var $this RoleController */
 /* @var $model Role */
 
+
+$types = array(
+    2 => 'Role',
+    3 => 'Division'
+);
+
 $this->breadcrumbs=array(
 	'Roles'=>array('/role/' . $types[$model->type]),
 	$model->name,
