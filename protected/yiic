@@ -1,4 +1,4 @@
-#!/usr/bin/env php
+#!/usr/bin/env /home/work/app/php/bin/php
 <?php
 
-require_once(dirname(__FILE__).'/yiic.php');
+require_once(dirname(__FILE__).'/../protected/yiic.php');
